@@ -43,8 +43,7 @@ class DefaultFirebaseOptions {
     }
   }
 
-
-static const FirebaseOptions web = FirebaseOptions(
+  static const FirebaseOptions web = FirebaseOptions(
     apiKey: 'AIzaSyDmF9ROrNH4INaNz61k1eVV-UvtplYz6mQ',
     appId: '1:903399799969:web:b3e576c32e2928990d04e0',
     messagingSenderId: '903399799969',
@@ -78,5 +77,4 @@ static const FirebaseOptions web = FirebaseOptions(
     storageBucket: 'finalmoviles-989f3.appspot.com',
     iosBundleId: 'com.example.gtkFlutter.RunnerTests',
   );
-
 }

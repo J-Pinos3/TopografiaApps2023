@@ -1,7 +1,9 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'register_screen.dart';
 import 'home_page.dart';
+import 'home_pageUser.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({Key? key}) : super(key: key);
@@ -12,15 +14,37 @@ class LoginScreen extends StatelessWidget {
     BuildContext context,
   ) async {
     try {
-      await FirebaseAuth.instance.signInWithEmailAndPassword(
+      final UserCredential userCredential =
+          await FirebaseAuth.instance.signInWithEmailAndPassword(
         email: email,
         password: password,
       );
 
-      Navigator.push(
-        context,
-        MaterialPageRoute(builder: (context) => HomePage()),
-      );
+      // Obtener el rol del usuario
+      final userDoc = await FirebaseFirestore.instance
+          .collection('usuarios')
+          .doc(userCredential.user!.uid)
+          .get();
+      final rol = userDoc.get('rol');
+
+      // Redirige al HomePage adecuado según el rol del usuario
+      if (rol == 'Administrador') {
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => HomePage()),
+        );
+      } else if (rol == 'Usuario') {
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => HomePageUser()),
+        );
+      } else {
+        // Si el rol no es válido, lanzar una excepción
+        throw FirebaseAuthException(
+          code: 'invalid-user-role',
+          message: 'Rol de usuario no válido',
+        );
+      }
     } on FirebaseAuthException catch (e) {
       showDialog(
         context: context,
