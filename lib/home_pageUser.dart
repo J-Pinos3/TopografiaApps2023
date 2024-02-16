@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:gtk_flutter/pages/map_page.dart';
 
 class HomePageUser extends StatelessWidget {
   const HomePageUser({Key? key});
@@ -19,6 +20,13 @@ class HomePageUser extends StatelessWidget {
             },
             child: const Text('Cerrar Sesión'),
           ),
+          ElevatedButton(
+            onPressed: (){
+              Navigator.push(context,
+              MaterialPageRoute(builder: (context)=> MapPage()),);
+            },
+            child: const Text("Ubicación Actual")
+          )
         ],
       ),
       body: StreamBuilder<DocumentSnapshot>(
