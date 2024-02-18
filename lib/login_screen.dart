@@ -1,9 +1,11 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:provider/provider.dart';
 import 'register_screen.dart';
 import 'home_page.dart';
 import 'home_pageUser.dart';
+import './provider/auth_provider.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({Key? key}) : super(key: key);
@@ -73,6 +75,8 @@ class LoginScreen extends StatelessWidget {
     String email = '';
     String password = '';
 
+    final authProvider = context.watch<AuthenticationProvider>();
+
     return Scaffold(
       appBar: AppBar(
         title: const Text('Iniciar Sesión'),
@@ -102,6 +106,7 @@ class LoginScreen extends StatelessWidget {
             ElevatedButton(
               onPressed: () {
                 _signInWithEmailAndPassword(email, password, context);
+                authProvider.addUserToOnlineList(email);
               },
               child: const Text('Iniciar Sesión'),
             ),

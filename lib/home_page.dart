@@ -1,12 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:provider/provider.dart';
+import './provider/auth_provider.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key});
 
   Future<void> _eliminarUsuario(
       String userId, String userEmail, BuildContext context) async {
+        final authProvider = context.watch<AuthenticationProvider>();
     // Muestra una alerta para confirmar la eliminación del usuario
     bool confirmacion = await showDialog(
       context: context,
@@ -55,6 +58,7 @@ class HomePage extends StatelessWidget {
         if (user != null && user.uid != userId) {
           // Eliminar el usuario correspondiente a userId
           await user.delete();
+          authProvider.removeUserFromOnlineList(user!.email!);
         } else {
           print('No se puede eliminar el usuario actualmente logueado');
         }
@@ -70,6 +74,9 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    User? user = FirebaseAuth.instance.currentUser;
+    final authProvider = context.watch<AuthenticationProvider>();
+
     return Scaffold(
       appBar: AppBar(
         title: const Text('Administrador'),
@@ -77,6 +84,7 @@ class HomePage extends StatelessWidget {
           ElevatedButton(
             onPressed: () {
               FirebaseAuth.instance.signOut();
+              authProvider.removeUserFromOnlineList(user!.email!);
             },
             child: const Text('Cerrar Sesión'),
           ),
