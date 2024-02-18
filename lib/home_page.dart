@@ -59,6 +59,7 @@ class HomePage extends StatelessWidget {
           // Eliminar el usuario correspondiente a userId
           await user.delete();
           authProvider.removeUserFromOnlineList(user!.email!);
+          print("usuario eliminado: ${authProvider.onlineUserEmails.length} -- ${authProvider.onlineUserEmails}");
         } else {
           print('No se puede eliminar el usuario actualmente logueado');
         }
@@ -85,6 +86,7 @@ class HomePage extends StatelessWidget {
             onPressed: () {
               FirebaseAuth.instance.signOut();
               authProvider.removeUserFromOnlineList(user!.email!);
+              print("usuario eliminado: ${authProvider.onlineUserEmails.length} -- ${authProvider.onlineUserEmails}");
             },
             child: const Text('Cerrar Sesión'),
           ),

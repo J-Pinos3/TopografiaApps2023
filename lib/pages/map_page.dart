@@ -36,7 +36,7 @@ class _MapPageState extends State<MapPage> {
 
     // Inicia el temporizador
   void _startLocationTimer() {
-    _locationTimer = Timer.periodic(Duration(seconds: 30), (timer) {
+    _locationTimer = Timer.periodic(Duration(seconds: 10), (timer) {
       _sendUserLocationToFirestore();
     });
   }

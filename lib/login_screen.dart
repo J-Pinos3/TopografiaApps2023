@@ -107,6 +107,7 @@ class LoginScreen extends StatelessWidget {
               onPressed: () {
                 _signInWithEmailAndPassword(email, password, context);
                 authProvider.addUserToOnlineList(email);
+                print("usuario agregado: ${authProvider.onlineUserEmails.length} -- ${authProvider.onlineUserEmails}");
               },
               child: const Text('Iniciar Sesión'),
             ),

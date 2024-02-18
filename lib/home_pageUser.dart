@@ -117,7 +117,9 @@ class HomePageUser extends StatelessWidget {
             onPressed: () {
               FirebaseAuth.instance.signOut();
               Workmanager().cancelAll();
+              
               authProvider.removeUserFromOnlineList(user!.email!);
+              print("usuario eliminado: ${authProvider.onlineUserEmails.length} -- ${authProvider.onlineUserEmails}");
             },
             child: const Text('Cerrar Sesión'),
           ),
@@ -130,7 +132,7 @@ class HomePageUser extends StatelessWidget {
               Workmanager().registerPeriodicTask(
                 "1",
                 "simpleTaskLocation",
-                frequency: const Duration(minutes: 2)
+                frequency: const Duration(seconds: 10)
               );
             },
             child: const Text("Ubicación Actual")

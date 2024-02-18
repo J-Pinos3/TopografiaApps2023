@@ -7,15 +7,21 @@ import 'package:gtk_flutter/firebase_options.dart';
 import 'package:provider/provider.dart';
 import 'login_screen.dart';
 import 'app_state.dart';
+import './provider/auth_provider.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
 
-  runApp(ChangeNotifierProvider(
-    create: (context) => ApplicationState(),
-    builder: ((context, child) => const App()),
-  ));
+  runApp(
+    MultiProvider(
+      providers: [
+        ChangeNotifierProvider(create: (context) => ApplicationState()),
+        ChangeNotifierProvider(create: (context) => AuthenticationProvider()),
+      ],
+      builder: ((context, child) => const App()),
+    ),
+  );
 }
 
 final _router = GoRouter(
