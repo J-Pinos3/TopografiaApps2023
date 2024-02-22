@@ -1,3 +1,4 @@
+import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -5,7 +6,6 @@ import 'package:gtk_flutter/pages/map_page.dart';
 import 'package:provider/provider.dart';
 import 'package:workmanager/workmanager.dart';
 import 'package:geolocator/geolocator.dart';
-import './provider/auth_provider.dart';
 
 class HomePageUser extends StatelessWidget {
   const HomePageUser({Key? key});
@@ -101,12 +101,31 @@ class HomePageUser extends StatelessWidget {
   }
 
 
+  void removeUserFromRealtime(String userMail) async{
+    try {
+      if(userMail.isNotEmpty){
+        DatabaseReference logedUsersReference = FirebaseDatabase.instance.ref().child("logedusers");
 
+        final query = logedUsersReference.orderByChild("logedUserMail").equalTo(userMail);
+        query.once().then((event){
+          DataSnapshot snapshot = event.snapshot;
+          if(snapshot.exists){
+              final logoutUserRef = snapshot.children.first.ref;
+              logoutUserRef.remove();
+          }else{
+            return ;
+          }
+        });
+      }
+    } catch (e) {
+      print("Error al eliminar usuario de la base de datos: $e");
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
     final currentUserID = FirebaseAuth.instance.currentUser?.uid;
-    final authProvider = context.watch<AuthenticationProvider>();
+    
     User? user = FirebaseAuth.instance.currentUser;
 
     return Scaffold(
@@ -117,9 +136,7 @@ class HomePageUser extends StatelessWidget {
             onPressed: () {
               FirebaseAuth.instance.signOut();
               Workmanager().cancelAll();
-              
-              authProvider.removeUserFromOnlineList(user!.email!);
-              print("usuario eliminado: ${authProvider.onlineUserEmails.length} -- ${authProvider.onlineUserEmails}");
+              removeUserFromRealtime(user!.email!);
             },
             child: const Text('Cerrar Sesión'),
           ),

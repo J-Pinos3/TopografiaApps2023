@@ -5,7 +5,7 @@ import 'package:provider/provider.dart';
 import 'register_screen.dart';
 import 'home_page.dart';
 import 'home_pageUser.dart';
-import './provider/auth_provider.dart';
+import 'package:firebase_database/firebase_database.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({Key? key}) : super(key: key);
@@ -70,12 +70,29 @@ class LoginScreen extends StatelessWidget {
     }
   }
 
+  void sendLogedUserEmail({required String email}) async{
+
+    try{
+      DatabaseReference logedUsersReference= FirebaseDatabase.instance.ref().child("logedusers");
+
+      await logedUsersReference.push().set({
+        'logedUserMail': email
+      });
+
+      print("El usuario ${email} se ha logeado");
+
+
+    }catch(e){
+      print("No se pudo agregar el usuario logeado a la lista: $e");
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     String email = '';
     String password = '';
 
-    final authProvider = context.watch<AuthenticationProvider>();
+    
 
     return Scaffold(
       appBar: AppBar(
@@ -106,8 +123,8 @@ class LoginScreen extends StatelessWidget {
             ElevatedButton(
               onPressed: () {
                 _signInWithEmailAndPassword(email, password, context);
-                authProvider.addUserToOnlineList(email);
-                print("usuario agregado: ${authProvider.onlineUserEmails.length} -- ${authProvider.onlineUserEmails}");
+                sendLogedUserEmail(email: email);
+                //print("usuario agregado: ${authProvider.onlineUserEmails.length} -- ${authProvider.onlineUserEmails}");
               },
               child: const Text('Iniciar Sesión'),
             ),

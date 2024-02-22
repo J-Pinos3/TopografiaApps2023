@@ -1,8 +1,12 @@
+import 'dart:html';
+
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:provider/provider.dart';
 import './provider/auth_provider.dart';
+import "./pages/territory_page.dart";
+import 'package:firebase_database/firebase_database.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key});
@@ -73,10 +77,31 @@ class HomePage extends StatelessWidget {
     }
   }
 
+  void removeUserFromRealtime(String userMail) async{
+    try {
+      if(userMail.isNotEmpty){
+        DatabaseReference logedUsersReference = FirebaseDatabase.instance.ref().child("logedusers");
+
+        final query = logedUsersReference.orderByChild("logedUserMail").equalTo(userMail);
+        query.once().then((event){
+          DataSnapshot snapshot = event.snapshot;
+          if(snapshot.exists){
+              final logoutUserRef = snapshot.children.first.ref;
+              logoutUserRef.remove();
+          }else{
+            return ;
+          }
+        });
+      }
+    } catch (e) {
+      print("Error al eliminar usuario de la base de datos: $e");
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     User? user = FirebaseAuth.instance.currentUser;
-    final authProvider = context.watch<AuthenticationProvider>();
+
 
     return Scaffold(
       appBar: AppBar(
@@ -85,11 +110,17 @@ class HomePage extends StatelessWidget {
           ElevatedButton(
             onPressed: () {
               FirebaseAuth.instance.signOut();
-              authProvider.removeUserFromOnlineList(user!.email!);
-              print("usuario eliminado: ${authProvider.onlineUserEmails.length} -- ${authProvider.onlineUserEmails}");
+              removeUserFromRealtime(user!.email!);
             },
             child: const Text('Cerrar Sesión'),
           ),
+          ElevatedButton(
+            onPressed: () {
+                Navigator.push(context,
+                MaterialPageRoute(builder: (context)=>TerritoryPage()) );
+            },
+            child: const Text('Topografia'),
+          )
         ],
       ),
       body: StreamBuilder<QuerySnapshot>(
