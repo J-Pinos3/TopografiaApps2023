@@ -4,6 +4,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:gtk_flutter/pages/map_page.dart';
 import 'package:provider/provider.dart';
+import 'login_screen.dart';
 import 'package:workmanager/workmanager.dart';
 import 'package:geolocator/geolocator.dart';
 
@@ -35,7 +36,7 @@ class HomePageUser extends StatelessWidget {
       return Future.error("Location services are denied forever, can't use geolocation services :(");
     }
     
-    return await Geolocator.getCurrentPosition();
+    return await Geolocator.getCurrentPosition(desiredAccuracy: LocationAccuracy.high);
   }
 
   Future<Position> getUserCurrentPosition() async {
@@ -125,25 +126,38 @@ class HomePageUser extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final currentUserID = FirebaseAuth.instance.currentUser?.uid;
+
     
+
     User? user = FirebaseAuth.instance.currentUser;
 
     return Scaffold(
       appBar: AppBar(
         title: const Text('Usuario'),
+        automaticallyImplyLeading: false,
         actions: [
-          ElevatedButton(
-            onPressed: () {
-              FirebaseAuth.instance.signOut();
-              Workmanager().cancelAll();
-              removeUserFromRealtime(user!.email!);
-            },
-            child: const Text('Cerrar Sesión'),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: ElevatedButton.icon(
+              onPressed: () {
+                FirebaseAuth.instance.signOut();
+                Workmanager().cancelByUniqueName("1");
+                removeUserFromRealtime(user!.email!);
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => LoginScreen()));
+              },
+              icon: Icon(Icons.logout),
+              label: Text('Cerrar Sesión'),
+            ),
           ),
-          ElevatedButton(
-            onPressed: (){
-              Navigator.push(context,
-              MaterialPageRoute(builder: (context)=> MapPage()),);
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: ElevatedButton.icon(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => MapPage()),
+                );
 
               Workmanager().initialize(callbackDispatcher, isInDebugMode: true);
               Workmanager().registerPeriodicTask(
@@ -152,40 +166,107 @@ class HomePageUser extends StatelessWidget {
                 frequency: const Duration(seconds: 10)
               );
             },
-            child: const Text("Ubicación Actual")
+            icon: Icon(Icons.location_on),
+              label: Text("Ubicación Actual"),
+          )
           )
         ],
       ),
-      body: StreamBuilder<DocumentSnapshot>(
-        stream: FirebaseFirestore.instance
-            .collection('usuarios')
-            .doc(currentUserID)
-            .snapshots(),
-        builder: (context, snapshot) {
-          if (!snapshot.hasData) {
-            return Center(
-              child: CircularProgressIndicator(),
-            );
-          }
-
-          var usuario = snapshot.data!;
-          var nombre = usuario['nombre'];
-          var apellido = usuario['apellido'];
-          var rol = usuario['rol'];
-
-          return Padding(
-            padding: const EdgeInsets.all(16.0),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Stack(
+              alignment: Alignment.topCenter,
               children: [
-                SizedBox(height: 8),
-                Text('Nombre: $nombre $apellido'),
-                Text('Rol: $rol'),
+                Padding(
+                  padding: const EdgeInsets.only(),
+                  child: Icon(
+                    Icons.account_circle, // Icono de perfil
+                    size: 108,
+                    color: Colors.blue,
+                  ),
+                ),
+                Card(
+                  elevation: 4,
+                  child: Container(
+                    width: double.infinity, // Ancho máximo
+                    padding: const EdgeInsets.all(1),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Icon(
+                          Icons.account_circle,
+                          size: 100, // Aumentar el tamaño del icono
+                          color: Colors.black, // Blanco y negro
+                        ),
+                        SizedBox(
+                            height:
+                                24), // Mayor espacio entre el icono y los datos
+                        StreamBuilder<DocumentSnapshot>(
+                          stream: FirebaseFirestore.instance
+                              .collection('usuarios')
+                              .doc(currentUserID)
+                              .snapshots(),
+                          builder: (context, snapshot) {
+                            if (!snapshot.hasData) {
+                              return Center(
+                                child: CircularProgressIndicator(),
+                              );
+                            }
+
+              var usuario = snapshot.data!;
+              var nombre = usuario['nombre'];
+              var apellido = usuario['apellido'];
+              var rol = usuario['rol'];
+
+                            return Column(
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              children: [
+                                Text(
+                                  'Nombre: $nombre $apellido',
+                                  style: TextStyle(
+                                    fontSize:
+                                        24, // Aumentar el tamaño de la fuente
+                                  ),
+                                  textAlign: TextAlign.center,
+                                ),
+                                SizedBox(
+                                  height: 16, // Mayor espacio entre los datos
+                                ),
+                                Text(
+                                  'Correo: ${getCurrentUser()?.email}',
+                                  style: TextStyle(
+                                    fontSize:
+                                        24, // Aumentar el tamaño de la fuente
+                                  ),
+                                  textAlign: TextAlign.center,
+                                ),
+                                SizedBox(
+                                  height: 16, // Mayor espacio entre los datos
+                                ),
+                                Text(
+                                  'Rol: $rol',
+                                  style: TextStyle(
+                                    fontSize:
+                                        24, // Aumentar el tamaño de la fuente
+                                  ),
+                                  textAlign: TextAlign.center,
+                                ),
+                              ],
+                            );
+                          },
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
               ],
             ),
-          );
-        },
-      ),
-    );
+          ]
+          ),
+        ),
+      );
+    
   }
 }

@@ -85,36 +85,52 @@ class RegisterScreen extends StatelessWidget {
               onChanged: (value) {
                 selectedRole = value!;
               },
+              decoration: InputDecoration(
+                labelText: 'Rol',
+                border: OutlineInputBorder(),
+              ),
             ),
             const SizedBox(height: 16),
-            TextField(
+            TextFormField(
               onChanged: (value) {
                 name = value;
               },
-              decoration: InputDecoration(labelText: 'Nombre'),
+              decoration: InputDecoration(
+                labelText: 'Nombre',
+                border: OutlineInputBorder(),
+              ),
             ),
             const SizedBox(height: 16),
-            TextField(
+            TextFormField(
               onChanged: (value) {
                 lastName = value;
               },
-              decoration: InputDecoration(labelText: 'Apellido'),
+              decoration: InputDecoration(
+                labelText: 'Apellido',
+                border: OutlineInputBorder(),
+              ),
             ),
             const SizedBox(height: 16),
-            TextField(
+            TextFormField(
               onChanged: (value) {
                 email = value;
               },
-              decoration: InputDecoration(labelText: 'Correo Electrónico'),
+              decoration: InputDecoration(
+                labelText: 'Correo Electrónico',
+                border: OutlineInputBorder(),
+              ),
               keyboardType: TextInputType.emailAddress,
             ),
             const SizedBox(height: 16),
-            TextField(
+            TextFormField(
               onChanged: (value) {
                 password = value;
               },
               obscureText: true,
-              decoration: InputDecoration(labelText: 'Contraseña'),
+              decoration: InputDecoration(
+                labelText: 'Contraseña',
+                border: OutlineInputBorder(),
+              ),
             ),
             const SizedBox(height: 16),
             ElevatedButton(

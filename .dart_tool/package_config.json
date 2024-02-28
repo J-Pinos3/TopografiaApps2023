@@ -266,6 +266,12 @@
       "languageVersion": "2.19"
     },
     {
+      "name": "flutter_polyline_points",
+      "rootUri": "file:///C:/Users/Usuario/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_polyline_points-2.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
       "name": "flutter_svg",
       "rootUri": "file:///C:/Users/Usuario/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_svg-2.0.10+1",
       "packageUri": "lib/",
@@ -420,6 +426,12 @@
       "rootUri": "file:///C:/Users/Usuario/AppData/Local/Pub/Cache/hosted/pub.dev/logging-1.2.0",
       "packageUri": "lib/",
       "languageVersion": "2.19"
+    },
+    {
+      "name": "maps_toolkit",
+      "rootUri": "file:///C:/Users/Usuario/AppData/Local/Pub/Cache/hosted/pub.dev/maps_toolkit-2.0.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
     },
     {
       "name": "matcher",
@@ -668,7 +680,7 @@
       "languageVersion": "3.2"
     }
   ],
-  "generated": "2024-02-22T02:21:36.079115Z",
+  "generated": "2024-02-27T00:21:13.358924Z",
   "generator": "pub",
   "generatorVersion": "3.2.6"
 }

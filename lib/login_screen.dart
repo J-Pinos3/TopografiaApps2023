@@ -75,6 +75,14 @@ class LoginScreen extends StatelessWidget {
     try{
       DatabaseReference logedUsersReference= FirebaseDatabase.instance.ref().child("logedusers");
 
+      final query = logedUsersReference.orderByChild('logedUserMail').equalTo(email);
+      final snapshot = await query.once();
+
+      if( snapshot.snapshot.value != null ){
+        print("El usuario ya se logeó en la app");
+        return; 
+      }
+
       await logedUsersReference.push().set({
         'logedUserMail': email
       });
@@ -104,20 +112,28 @@ class LoginScreen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            TextField(
+            TextFormField(
               onChanged: (value) {
                 email = value;
               },
-              decoration: InputDecoration(labelText: 'Correo Electrónico'),
+              decoration: InputDecoration(
+                labelText: 'Correo Electrónico',
+                border: OutlineInputBorder(),
+                prefixIcon: Icon(Icons.email),
+              ),
               keyboardType: TextInputType.emailAddress,
             ),
             const SizedBox(height: 16),
-            TextField(
+            TextFormField(
               onChanged: (value) {
                 password = value;
               },
               obscureText: true,
-              decoration: InputDecoration(labelText: 'Contraseña'),
+              decoration: InputDecoration(
+                labelText: 'Contraseña',
+                border: OutlineInputBorder(),
+                prefixIcon: Icon(Icons.lock),
+              ),
             ),
             const SizedBox(height: 16),
             ElevatedButton(
@@ -129,14 +145,14 @@ class LoginScreen extends StatelessWidget {
               child: const Text('Iniciar Sesión'),
             ),
             const SizedBox(height: 16),
-            ElevatedButton(
+            TextButton(
               onPressed: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => RegisterScreen()),
                 );
               },
-              child: const Text('Registrarse'),
+              child: const Text('¿No tienes una cuenta? Regístrate aquí'),
             ),
             const SizedBox(height: 32),
             // Agregar el widget para mostrar los nombres de los desarrolladores
@@ -155,7 +171,8 @@ class DeveloperNamesWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        const Text('Integrantes:'),
+        const Text('Integrantes:',
+            style: TextStyle(fontWeight: FontWeight.bold)),
         const SizedBox(height: 8),
         Text('Miguel Carapaz'),
         Text('David Basantes'),

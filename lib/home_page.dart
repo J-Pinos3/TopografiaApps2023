@@ -1,5 +1,3 @@
-import 'dart:html';
-
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -7,6 +5,7 @@ import 'package:provider/provider.dart';
 import './provider/auth_provider.dart';
 import "./pages/territory_page.dart";
 import 'package:firebase_database/firebase_database.dart';
+import 'login_screen.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key});
@@ -106,20 +105,31 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Administrador'),
+        automaticallyImplyLeading: false,
         actions: [
-          ElevatedButton(
-            onPressed: () {
-              FirebaseAuth.instance.signOut();
-              removeUserFromRealtime(user!.email!);
-            },
-            child: const Text('Cerrar Sesión'),
-          ),
-          ElevatedButton(
-            onPressed: () {
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: ElevatedButton.icon(
+              onPressed: () {
+                FirebaseAuth.instance.signOut();
+                removeUserFromRealtime(user!.email!);
                 Navigator.push(context,
-                MaterialPageRoute(builder: (context)=>TerritoryPage()) );
-            },
-            child: const Text('Topografia'),
+                    MaterialPageRoute(builder: (context) => LoginScreen()));
+              },
+              icon: Icon(Icons.logout),
+              label: Text('Cerrar Sesión'),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: ElevatedButton.icon(
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => TerritoryPage()));
+              },
+              icon: Icon(Icons.map),
+              label: Text('Topografía'),
+            ),
           )
         ],
       ),
@@ -127,9 +137,7 @@ class HomePage extends StatelessWidget {
         stream: FirebaseFirestore.instance.collection('usuarios').snapshots(),
         builder: (context, snapshot) {
           if (!snapshot.hasData) {
-            return Container(
-              alignment: Alignment.center,
-              padding: EdgeInsets.all(16.0),
+            return Center(
               child: CircularProgressIndicator(),
             );
           }
@@ -149,28 +157,41 @@ class HomePage extends StatelessWidget {
                 FirebaseAuth.instance.currentUser?.uid == userId;
 
             listaUsuarios.add(
-              Column(
-                children: [
-                  SizedBox(height: 8),
-                  Text('Nombre: $nombre $apellido'),
-                  Text('Correo: $email'),
-                  Text('Rol: $rol'),
-                  // Mostrar el icono de eliminación solo si el usuario no es el actualmente logeado
-                  if (!esUsuarioActual)
-                    IconButton(
-                      icon: Icon(Icons.delete),
-                      onPressed: () {
-                        _eliminarUsuario(userId, email, context);
-                      },
-                    ),
-                  Divider(
-                    height: 8,
-                    thickness: 1,
-                    indent: 8,
-                    endIndent: 8,
-                    color: Colors.grey,
+              Card(
+                margin: EdgeInsets.all(8.0),
+                elevation: 4,
+                shadowColor: Colors.black,
+                child: Padding(
+                  padding: EdgeInsets.all(8.0),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Text(
+                        'Nombre: $nombre $apellido',
+                        textAlign: TextAlign.center,
+                      ),
+                      SizedBox(height: 8),
+                      Text(
+                        'Correo: $email',
+                        textAlign: TextAlign.center,
+                      ),
+                      SizedBox(height: 8),
+                      Text(
+                        'Rol: $rol',
+                        textAlign: TextAlign.center,
+                      ),
+                      SizedBox(height: 8),
+                      // Mostrar el icono de eliminación solo si el usuario no es el actualmente logeado
+                      if (!esUsuarioActual)
+                        IconButton(
+                          icon: Icon(Icons.delete),
+                          onPressed: () {
+                            _eliminarUsuario(userId, email, context);
+                          },
+                        ),
+                    ],
                   ),
-                ],
+                ),
               ),
             );
           }
