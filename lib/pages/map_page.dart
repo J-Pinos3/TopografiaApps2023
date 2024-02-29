@@ -38,7 +38,6 @@ class _MapPageState extends State<MapPage> {
     }
   }
 
-    
 
   Future<List<Map>> getUsersPositions(final List<String> correosPosicion) async {
     try {
@@ -72,7 +71,6 @@ class _MapPageState extends State<MapPage> {
 
   Future<List<Map>> getUsersPositionsFromLogedUsers() async {
     correos = await getAllLogedUsersEmail();
-    Future.delayed(Duration(seconds: 2));
     return getUsersPositions(correos);
   }
 
@@ -149,47 +147,6 @@ class _MapPageState extends State<MapPage> {
       print("Error al enviar ubicación a Firestore: $e");
     }
   }
-  // Método para enviar la ubicación del usuario a Firestore
-  /*
-Future<void> _sendUserLocationToFirestore() async {
-  try {
-    Position position = await getUserCurrentPosition();
-    User? user = getCurrentUser();
-
-    // Verificar que la posición y el usuario sean válidos antes de enviar a Firestore
-    if (user != null) {
-      QuerySnapshot query = await FirebaseFirestore.instance
-          .collection('posiciones')
-          .where('userEmail', isEqualTo: user.email)
-          .get();
-
-      if (query.docs.isNotEmpty) {
-        // El documento ya existe, actualiza sus campos
-        final String docId = query.docs[0].id;
-
-        await FirebaseFirestore.instance.collection('posiciones').doc(docId).update({
-          'latitud': position.latitude,
-          'longitud': position.longitude,
-        });
-
-        print("Ubicación actualizada en Firestore: ${position.latitude}, ${position.longitude}");
-      } else {
-        // El documento no existe, créalo
-        await FirebaseFirestore.instance.collection("posiciones").add({
-          'latitud': position.latitude,
-          'longitud': position.longitude,
-          'userEmail': user.email,
-        });
-
-        print("Nuevo documento creado en Firestore: ${position.latitude}, ${position.longitude}");
-      }
-    }
-  } catch (e) {
-    print("Error al enviar ubicación a Firestore: $e");
-  }
-}
-*/
-
 
   User? getCurrentUser(){
     final User? user = FirebaseAuth.instance.currentUser;
@@ -249,25 +206,20 @@ Future<void> _sendUserLocationToFirestore() async {
           listaPosiciones.add({"latitud": userPosition.latitude, "longitud": userPosition.longitude});
 
           // Crear marcadores para el usuario y otros usuarios
-          List<Marker> markersList = [];
+          List<Marker> markersList = listaPosiciones.map((position) {
+            double latitude = position['latitud'] as double;
+            double longitude = position['longitud'] as double;
 
-          for (int i = 0; i < listaPosiciones.length; i++) {
-            double latitude = listaPosiciones[i]['latitud'] as double;
-            double longitude = listaPosiciones[i]['longitud'] as double;
-            String correo = correos[i]; // Obtener el correo del usuario
-
-            Marker marker = Marker(
-              markerId: MarkerId(correo), // Usar el correo como ID
+            return Marker(
+              markerId: MarkerId('${position.hashCode}'),
               icon: BitmapDescriptor.defaultMarker,
               position: LatLng(latitude, longitude),
               infoWindow: InfoWindow(
-                title: "Ubicación de $correo",
-                snippet: "Latitud: $latitude \nLongitud: $longitude",
-              ),
+                title: "Posición",
+                snippet: "Latitud: $latitude\nLongitud: $longitude"
+              )
             );
-
-            markersList.add(marker);
-          }
+          }).toList();
 
           return Scaffold(
             

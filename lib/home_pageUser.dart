@@ -141,8 +141,9 @@ class HomePageUser extends StatelessWidget {
             child: ElevatedButton.icon(
               onPressed: () {
                 FirebaseAuth.instance.signOut();
-                Workmanager().cancelByUniqueName("1");
                 removeUserFromRealtime(user!.email!);
+                Workmanager().cancelByUniqueName("1");
+                
                 Navigator.push(context,
                     MaterialPageRoute(builder: (context) => LoginScreen()));
               },

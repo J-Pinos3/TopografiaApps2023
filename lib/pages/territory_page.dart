@@ -7,7 +7,6 @@ import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:gtk_flutter/home_page.dart';
 import 'package:provider/provider.dart';
 import "dart:async";
-import '../provider/auth_provider.dart';
 import 'package:firebase_database/firebase_database.dart';
 
 class TerritoryPage extends StatefulWidget {
@@ -18,10 +17,49 @@ class TerritoryPage extends StatefulWidget {
 }
 
 class _TerritoryPageState extends State<TerritoryPage> {
+
+  late Timer _locationUpdateTimer;
+  List<Map> listaPosiciones = [];
   List<Polyline> polylines = [];
   double area = 0.0;
   List<String> correos = [];
   Set<Polygon> _poligono = HashSet<Polygon>();
+
+  @override
+  void initState() {
+    super.initState();
+    
+    _startUpdateLocationTimer();
+  }
+
+
+  @override
+  void dispose() {
+    
+    _locationUpdateTimer.cancel();
+    super.dispose();
+  }
+
+  void _updatePositions() async {
+    try {
+      List<Map> updatedPositions = await getUsersPositionsFromLogedUsers();
+      setState(() {
+        // Update the listaPosiciones variable with the new positions
+        listaPosiciones = updatedPositions;
+      });
+    } catch (e) {
+      print("Error fetching updated positions: $e");
+    }
+  }
+
+  void _startUpdateLocationTimer(){
+    _locationUpdateTimer = Timer.periodic(Duration(seconds: 30),(timer){
+
+      _updatePositions();
+    });
+  }
+
+
 
   Future<List<String>> getAllLogedUsersEmail() async {
     try {
@@ -84,26 +122,27 @@ class _TerritoryPageState extends State<TerritoryPage> {
     return input * pi / 180;
   }
 
-  void showArea(List<LatLng> posiciones) {
-    area = 0;
+  double showArea(List<LatLng> posiciones) {
+    double areaSup = 0;
 
     if (posiciones.length > 2) {
       for (var i = 0; i < posiciones.length - 1; i++) {
         var p1 = posiciones[i];
         var p2 = posiciones[i + 1];
-        area += convertToRadian(p2.longitude - p1.longitude) *
+        areaSup += convertToRadian(p2.longitude - p1.longitude) *
             (2 +
                 sin(convertToRadian(p1.latitude)) +
                 sin(convertToRadian(p2.latitude)));
       }
 
-      area = area * 6378137 * 6378137 / 2;
+      areaSup = areaSup * 6378137 * 6378137 / 2;
     }
 
-    setState(() {
-        area = area.abs();
-    });
-    print("AREA DE LA REGIÓN SOMBREADA: $area");
+
+        areaSup = areaSup.abs();
+
+    print("AREA DE LA REGIÓN SOMBREADA: $areaSup");
+    return areaSup;
   }
 
   @override
@@ -122,7 +161,7 @@ class _TerritoryPageState extends State<TerritoryPage> {
           return Center(child: Text("Error: ${snapshot.error}"));
         } else {
           // Extrae la lista de posiciones del snapshot
-          List<Map> listaPosiciones = snapshot.data!;
+          listaPosiciones = snapshot.data!;
           listaPosiciones.add({
             "latitud": _japanPlex.latitude,
             "longitud": _japanPlex.longitude
@@ -137,7 +176,10 @@ class _TerritoryPageState extends State<TerritoryPage> {
               .map((posicion) => LatLng(posicion["latitud"] as double,
                   posicion["longitud"] as double))
               .toList();
-          showArea(polylineCoordinates);
+          
+
+            area = showArea(polylineCoordinates);  
+
           polylineCoordinates.add(polylineCoordinates.first);
 
           Polyline polyline = Polyline(
