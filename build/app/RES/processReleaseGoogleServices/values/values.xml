@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="gcm_defaultSenderId" translatable="false">921945470639</string>
+    <string name="google_api_key" translatable="false">AIzaSyDqEkzOvQK0dwoT0an_j0eHPyb3nIF_rNQ</string>
+    <string name="google_app_id" translatable="false">1:921945470639:android:1e5a3dcf8f43134539065a</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDqEkzOvQK0dwoT0an_j0eHPyb3nIF_rNQ</string>
+    <string name="google_storage_bucket" translatable="false">fir-flutter-codelab-b5aab.appspot.com</string>
+    <string name="project_id" translatable="false">fir-flutter-codelab-b5aab</string>
+</resources>

@@ -15,6 +15,29 @@ class RegisterScreen extends StatelessWidget {
     String lastName,
     BuildContext context,
   ) async {
+    // Verificar si el correo electrónico contiene caracteres en mayúsculas
+    if (email.contains(RegExp(r'[A-Z]'))) {
+      showDialog(
+        context: context,
+        builder: (context) {
+          return AlertDialog(
+            title: const Text('Error de Registro'),
+            content:
+                const Text('El correo electrónico debe estar en minúsculas.'),
+            actions: [
+              TextButton(
+                onPressed: () {
+                  Navigator.pop(context);
+                },
+                child: const Text('OK'),
+              ),
+            ],
+          );
+        },
+      );
+      return; // Detener el proceso de registro
+    }
+
     try {
       final UserCredential authResult =
           await FirebaseAuth.instance.createUserWithEmailAndPassword(
@@ -33,7 +56,7 @@ class RegisterScreen extends StatelessWidget {
         'nombre': name,
         'apellido': lastName,
         'rol': selectedRole,
-        'email': email, // Agregar el correo electrónico aquí
+        'email': email.toLowerCase(), // Convertir a minúsculas antes de guardar
       });
 
       Navigator.pop(context);
@@ -85,36 +108,52 @@ class RegisterScreen extends StatelessWidget {
               onChanged: (value) {
                 selectedRole = value!;
               },
+              decoration: InputDecoration(
+                labelText: 'Rol',
+                border: OutlineInputBorder(),
+              ),
             ),
             const SizedBox(height: 16),
-            TextField(
+            TextFormField(
               onChanged: (value) {
                 name = value;
               },
-              decoration: InputDecoration(labelText: 'Nombre'),
+              decoration: InputDecoration(
+                labelText: 'Nombre',
+                border: OutlineInputBorder(),
+              ),
             ),
             const SizedBox(height: 16),
-            TextField(
+            TextFormField(
               onChanged: (value) {
                 lastName = value;
               },
-              decoration: InputDecoration(labelText: 'Apellido'),
+              decoration: InputDecoration(
+                labelText: 'Apellido',
+                border: OutlineInputBorder(),
+              ),
             ),
             const SizedBox(height: 16),
-            TextField(
+            TextFormField(
               onChanged: (value) {
                 email = value;
               },
-              decoration: InputDecoration(labelText: 'Correo Electrónico'),
+              decoration: InputDecoration(
+                labelText: 'Correo Electrónico',
+                border: OutlineInputBorder(),
+              ),
               keyboardType: TextInputType.emailAddress,
             ),
             const SizedBox(height: 16),
-            TextField(
+            TextFormField(
               onChanged: (value) {
                 password = value;
               },
               obscureText: true,
-              decoration: InputDecoration(labelText: 'Contraseña'),
+              decoration: InputDecoration(
+                labelText: 'Contraseña',
+                border: OutlineInputBorder(),
+              ),
             ),
             const SizedBox(height: 16),
             ElevatedButton(

@@ -50,6 +50,7 @@ class DefaultFirebaseOptions {
     projectId: 'finalmoviles-989f3',
     authDomain: 'finalmoviles-989f3.firebaseapp.com',
     storageBucket: 'finalmoviles-989f3.appspot.com',
+    databaseURL: "https://finalmoviles-989f3-default-rtdb.firebaseio.com"
   );
 
   static const FirebaseOptions android = FirebaseOptions(
@@ -58,6 +59,7 @@ class DefaultFirebaseOptions {
     messagingSenderId: '903399799969',
     projectId: 'finalmoviles-989f3',
     storageBucket: 'finalmoviles-989f3.appspot.com',
+    databaseURL: "https://finalmoviles-989f3-default-rtdb.firebaseio.com"
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
