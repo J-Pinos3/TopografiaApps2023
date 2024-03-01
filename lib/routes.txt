@@ -1,0 +1,10 @@
+YO
+Corregir lo de cancelar la ubicación en segundo
+al cerrar sesión
+
+si ya está en realtime db, no volverlo a agregar
+
+
+MAS IMPORTANTE
+obtener las ubicaciones e tiempo real
+

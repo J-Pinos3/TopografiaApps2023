@@ -1,0 +1,12 @@
+net.jonhanson.flutter_native_splash-jetified-annotation-experimental-1.1.0-0 C:\Users\sebas\.gradle\caches\transforms-3\09db32a73384ac2dccccf916d7dc0262\transformed\jetified-annotation-experimental-1.1.0\res
+net.jonhanson.flutter_native_splash-core-1.6.0-1 C:\Users\sebas\.gradle\caches\transforms-3\168e459aae59caaab0d2c703cf9d67ab\transformed\core-1.6.0\res
+net.jonhanson.flutter_native_splash-jetified-window-1.0.0-beta04-2 C:\Users\sebas\.gradle\caches\transforms-3\29fe38a5fd6c3bf46cd8e59c2b63489e\transformed\jetified-window-1.0.0-beta04\res
+net.jonhanson.flutter_native_splash-jetified-window-java-1.0.0-beta04-3 C:\Users\sebas\.gradle\caches\transforms-3\978180320ed1d29d66a82edc9d24751e\transformed\jetified-window-java-1.0.0-beta04\res
+net.jonhanson.flutter_native_splash-main-4 C:\Users\sebas\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_native_splash-2.3.10\android\src\main\res
+net.jonhanson.flutter_native_splash-release-5 C:\Users\sebas\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_native_splash-2.3.10\android\src\release\res
+net.jonhanson.flutter_native_splash-pngs-6 C:\Users\sebas\Downloads\Topografia\flutter\build\flutter_native_splash\generated\res\pngs\release
+net.jonhanson.flutter_native_splash-resValues-7 C:\Users\sebas\Downloads\Topografia\flutter\build\flutter_native_splash\generated\res\resValues\release
+net.jonhanson.flutter_native_splash-rs-8 C:\Users\sebas\Downloads\Topografia\flutter\build\flutter_native_splash\generated\res\rs\release
+net.jonhanson.flutter_native_splash-mergeReleaseResources-9 C:\Users\sebas\Downloads\Topografia\flutter\build\flutter_native_splash\intermediates\incremental\release\mergeReleaseResources\merged.dir
+net.jonhanson.flutter_native_splash-mergeReleaseResources-10 C:\Users\sebas\Downloads\Topografia\flutter\build\flutter_native_splash\intermediates\incremental\release\mergeReleaseResources\stripped.dir
+net.jonhanson.flutter_native_splash-merged_res-11 C:\Users\sebas\Downloads\Topografia\flutter\build\flutter_native_splash\intermediates\merged_res\release
