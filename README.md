@@ -4,6 +4,10 @@
 
 Este proyecto es una aplicación móvil desarrollada utilizando Flutter y Firebase para calcular el área entre tres dispositivos celulares. Permite a los usuarios establecer puntos en un espacio físico y calcular el área del triángulo formado por estos puntos, utilizando la tecnología de geolocalización de los dispositivos.
 
+Link del despliegue con vercel
+
+https://web-application-khaki.vercel.app/
+
 ## Integrantes del Equipo
 
 - David Basantes
