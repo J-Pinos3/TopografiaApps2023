@@ -14,7 +14,7 @@ https://youtu.be/w6hE0hgTCSs
 
 Link de la aplicacion en apptoide
 
-https://gtk-flutter.es.aptoide.com/?store_name=topolines&app_id=67195457
+
 
 ## Integrantes del Equipo
 
