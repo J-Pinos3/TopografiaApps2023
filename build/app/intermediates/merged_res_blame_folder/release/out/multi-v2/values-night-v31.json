@@ -4,14 +4,14 @@
             "outputFile": "com.example.gtk_flutter.app-mergeReleaseResources-20:/values-night-v31/values-night-v31.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\sebas\\Downloads\\Topografia\\flutter\\android\\app\\src\\main\\res\\values-night-v31\\styles.xml",
+                    "source": "C:\\Users\\sebas\\Desktop\\TopografiaApps2023\\android\\app\\src\\main\\res\\values-night-v31\\styles.xml",
                     "from": {
                         "startLines": "3,15",
                         "startColumns": "4,4",
-                        "startOffsets": "173,881",
+                        "startOffsets": "176,896",
                         "endLines": "8,17",
                         "endColumns": "12,12",
-                        "endOffsets": "530,1045"
+                        "endOffsets": "538,1062"
                     },
                     "to": {
                         "startLines": "2,8",

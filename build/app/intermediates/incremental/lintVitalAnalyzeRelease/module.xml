@@ -1,11 +1,11 @@
 <lint-module
     format="1"
-    dir="C:\Users\sebas\Downloads\Topografia\flutter\android\app"
+    dir="C:\Users\sebas\Desktop\TopografiaApps2023\android\app"
     name=":app"
     type="APP"
     maven="android:app:"
     gradle="7.3.0"
-    buildFolder="C:\Users\sebas\Downloads\Topografia\flutter\build\app"
+    buildFolder="C:\Users\sebas\Desktop\TopografiaApps2023\build\app"
     bootClassPath="C:\Users\sebas\AppData\Local\Android\Sdk\platforms\android-34\android.jar;C:\Users\sebas\AppData\Local\Android\Sdk\build-tools\30.0.3\core-lambda-stubs.jar"
     javaSourceLevel="1.8"
     compileTarget="android-34">

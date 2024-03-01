@@ -7,10 +7,10 @@ io.flutter.plugins.firebase.firestore.cloud_firestore-jetified-window-java-1.0.0
 io.flutter.plugins.firebase.firestore.cloud_firestore-jetified-play-services-base-18.0.1-6 C:\Users\sebas\.gradle\caches\transforms-3\da836af96063471d9ecc25668dfd26c9\transformed\jetified-play-services-base-18.0.1\res
 io.flutter.plugins.firebase.firestore.cloud_firestore-main-7 C:\Users\sebas\AppData\Local\Pub\Cache\hosted\pub.dev\cloud_firestore-4.15.6\android\src\main\res
 io.flutter.plugins.firebase.firestore.cloud_firestore-release-8 C:\Users\sebas\AppData\Local\Pub\Cache\hosted\pub.dev\cloud_firestore-4.15.6\android\src\release\res
-io.flutter.plugins.firebase.firestore.cloud_firestore-pngs-9 C:\Users\sebas\Downloads\Topografia\flutter\build\cloud_firestore\generated\res\pngs\release
-io.flutter.plugins.firebase.firestore.cloud_firestore-resValues-10 C:\Users\sebas\Downloads\Topografia\flutter\build\cloud_firestore\generated\res\resValues\release
-io.flutter.plugins.firebase.firestore.cloud_firestore-rs-11 C:\Users\sebas\Downloads\Topografia\flutter\build\cloud_firestore\generated\res\rs\release
-io.flutter.plugins.firebase.firestore.cloud_firestore-mergeReleaseResources-12 C:\Users\sebas\Downloads\Topografia\flutter\build\cloud_firestore\intermediates\incremental\release\mergeReleaseResources\merged.dir
-io.flutter.plugins.firebase.firestore.cloud_firestore-mergeReleaseResources-13 C:\Users\sebas\Downloads\Topografia\flutter\build\cloud_firestore\intermediates\incremental\release\mergeReleaseResources\stripped.dir
-io.flutter.plugins.firebase.firestore.cloud_firestore-merged_res-14 C:\Users\sebas\Downloads\Topografia\flutter\build\cloud_firestore\intermediates\merged_res\release
-io.flutter.plugins.firebase.firestore.cloud_firestore-packaged_res-15 C:\Users\sebas\Downloads\Topografia\flutter\build\firebase_core\intermediates\packaged_res\release
+io.flutter.plugins.firebase.firestore.cloud_firestore-pngs-9 C:\Users\sebas\Desktop\TopografiaApps2023\build\cloud_firestore\generated\res\pngs\release
+io.flutter.plugins.firebase.firestore.cloud_firestore-resValues-10 C:\Users\sebas\Desktop\TopografiaApps2023\build\cloud_firestore\generated\res\resValues\release
+io.flutter.plugins.firebase.firestore.cloud_firestore-rs-11 C:\Users\sebas\Desktop\TopografiaApps2023\build\cloud_firestore\generated\res\rs\release
+io.flutter.plugins.firebase.firestore.cloud_firestore-mergeReleaseResources-12 C:\Users\sebas\Desktop\TopografiaApps2023\build\cloud_firestore\intermediates\incremental\release\mergeReleaseResources\merged.dir
+io.flutter.plugins.firebase.firestore.cloud_firestore-mergeReleaseResources-13 C:\Users\sebas\Desktop\TopografiaApps2023\build\cloud_firestore\intermediates\incremental\release\mergeReleaseResources\stripped.dir
+io.flutter.plugins.firebase.firestore.cloud_firestore-merged_res-14 C:\Users\sebas\Desktop\TopografiaApps2023\build\cloud_firestore\intermediates\merged_res\release
+io.flutter.plugins.firebase.firestore.cloud_firestore-packaged_res-15 C:\Users\sebas\Desktop\TopografiaApps2023\build\firebase_core\intermediates\packaged_res\release

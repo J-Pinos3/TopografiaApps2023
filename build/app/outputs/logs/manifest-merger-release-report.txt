@@ -1,20 +1,20 @@
 -- Merging decision tree log ---
 application
-INJECTED from C:\Users\sebas\Downloads\Topografia\flutter\android\app\src\main\AndroidManifest.xml:7:5-41:19
-MERGED from [:firebase_database] C:\Users\sebas\Downloads\Topografia\flutter\build\firebase_database\intermediates\merged_manifest\release\AndroidManifest.xml:9:5-15:19
-MERGED from [:firebase_database] C:\Users\sebas\Downloads\Topografia\flutter\build\firebase_database\intermediates\merged_manifest\release\AndroidManifest.xml:9:5-15:19
-MERGED from [:cloud_firestore] C:\Users\sebas\Downloads\Topografia\flutter\build\cloud_firestore\intermediates\merged_manifest\release\AndroidManifest.xml:9:5-15:19
-MERGED from [:cloud_firestore] C:\Users\sebas\Downloads\Topografia\flutter\build\cloud_firestore\intermediates\merged_manifest\release\AndroidManifest.xml:9:5-15:19
-MERGED from [:firebase_dynamic_links] C:\Users\sebas\Downloads\Topografia\flutter\build\firebase_dynamic_links\intermediates\merged_manifest\release\AndroidManifest.xml:11:5-17:19
-MERGED from [:firebase_dynamic_links] C:\Users\sebas\Downloads\Topografia\flutter\build\firebase_dynamic_links\intermediates\merged_manifest\release\AndroidManifest.xml:11:5-17:19
-MERGED from [:firebase_auth] C:\Users\sebas\Downloads\Topografia\flutter\build\firebase_auth\intermediates\merged_manifest\release\AndroidManifest.xml:9:5-15:19
-MERGED from [:firebase_auth] C:\Users\sebas\Downloads\Topografia\flutter\build\firebase_auth\intermediates\merged_manifest\release\AndroidManifest.xml:9:5-15:19
-MERGED from [:firebase_storage] C:\Users\sebas\Downloads\Topografia\flutter\build\firebase_storage\intermediates\merged_manifest\release\AndroidManifest.xml:9:5-15:19
-MERGED from [:firebase_storage] C:\Users\sebas\Downloads\Topografia\flutter\build\firebase_storage\intermediates\merged_manifest\release\AndroidManifest.xml:9:5-15:19
-MERGED from [:firebase_core] C:\Users\sebas\Downloads\Topografia\flutter\build\firebase_core\intermediates\merged_manifest\release\AndroidManifest.xml:9:5-15:19
-MERGED from [:firebase_core] C:\Users\sebas\Downloads\Topografia\flutter\build\firebase_core\intermediates\merged_manifest\release\AndroidManifest.xml:9:5-15:19
-MERGED from [:geolocator_android] C:\Users\sebas\Downloads\Topografia\flutter\build\geolocator_android\intermediates\merged_manifest\release\AndroidManifest.xml:9:5-15:19
-MERGED from [:geolocator_android] C:\Users\sebas\Downloads\Topografia\flutter\build\geolocator_android\intermediates\merged_manifest\release\AndroidManifest.xml:9:5-15:19
+INJECTED from C:\Users\sebas\Desktop\TopografiaApps2023\android\app\src\main\AndroidManifest.xml:7:5-41:19
+MERGED from [:firebase_database] C:\Users\sebas\Desktop\TopografiaApps2023\build\firebase_database\intermediates\merged_manifest\release\AndroidManifest.xml:9:5-15:19
+MERGED from [:firebase_database] C:\Users\sebas\Desktop\TopografiaApps2023\build\firebase_database\intermediates\merged_manifest\release\AndroidManifest.xml:9:5-15:19
+MERGED from [:cloud_firestore] C:\Users\sebas\Desktop\TopografiaApps2023\build\cloud_firestore\intermediates\merged_manifest\release\AndroidManifest.xml:9:5-15:19
+MERGED from [:cloud_firestore] C:\Users\sebas\Desktop\TopografiaApps2023\build\cloud_firestore\intermediates\merged_manifest\release\AndroidManifest.xml:9:5-15:19
+MERGED from [:firebase_dynamic_links] C:\Users\sebas\Desktop\TopografiaApps2023\build\firebase_dynamic_links\intermediates\merged_manifest\release\AndroidManifest.xml:11:5-17:19
+MERGED from [:firebase_dynamic_links] C:\Users\sebas\Desktop\TopografiaApps2023\build\firebase_dynamic_links\intermediates\merged_manifest\release\AndroidManifest.xml:11:5-17:19
+MERGED from [:firebase_auth] C:\Users\sebas\Desktop\TopografiaApps2023\build\firebase_auth\intermediates\merged_manifest\release\AndroidManifest.xml:9:5-15:19
+MERGED from [:firebase_auth] C:\Users\sebas\Desktop\TopografiaApps2023\build\firebase_auth\intermediates\merged_manifest\release\AndroidManifest.xml:9:5-15:19
+MERGED from [:firebase_storage] C:\Users\sebas\Desktop\TopografiaApps2023\build\firebase_storage\intermediates\merged_manifest\release\AndroidManifest.xml:9:5-15:19
+MERGED from [:firebase_storage] C:\Users\sebas\Desktop\TopografiaApps2023\build\firebase_storage\intermediates\merged_manifest\release\AndroidManifest.xml:9:5-15:19
+MERGED from [:firebase_core] C:\Users\sebas\Desktop\TopografiaApps2023\build\firebase_core\intermediates\merged_manifest\release\AndroidManifest.xml:9:5-15:19
+MERGED from [:firebase_core] C:\Users\sebas\Desktop\TopografiaApps2023\build\firebase_core\intermediates\merged_manifest\release\AndroidManifest.xml:9:5-15:19
+MERGED from [:geolocator_android] C:\Users\sebas\Desktop\TopografiaApps2023\build\geolocator_android\intermediates\merged_manifest\release\AndroidManifest.xml:9:5-15:19
+MERGED from [:geolocator_android] C:\Users\sebas\Desktop\TopografiaApps2023\build\geolocator_android\intermediates\merged_manifest\release\AndroidManifest.xml:9:5-15:19
 MERGED from [com.google.firebase:firebase-database:20.3.0] C:\Users\sebas\.gradle\caches\transforms-3\7a645591ab524145f9f0597a0db794ea\transformed\jetified-firebase-database-20.3.0\AndroidManifest.xml:25:5-36:19
 MERGED from [com.google.firebase:firebase-database:20.3.0] C:\Users\sebas\.gradle\caches\transforms-3\7a645591ab524145f9f0597a0db794ea\transformed\jetified-firebase-database-20.3.0\AndroidManifest.xml:25:5-36:19
 MERGED from [com.google.firebase:firebase-firestore:24.10.2] C:\Users\sebas\.gradle\caches\transforms-3\ca42e3c19ab2b91f9cb5ad64da224c7d\transformed\jetified-firebase-firestore-24.10.2\AndroidManifest.xml:13:5-24:19
@@ -64,30 +64,30 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\se
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.9.0] C:\Users\sebas\.gradle\caches\transforms-3\cded83b008f9d29e1959bb7a5bc237d1\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
 	android:label
-		ADDED from C:\Users\sebas\Downloads\Topografia\flutter\android\app\src\main\AndroidManifest.xml:8:9-36
+		ADDED from C:\Users\sebas\Desktop\TopografiaApps2023\android\app\src\main\AndroidManifest.xml:8:9-36
 	android:icon
-		ADDED from C:\Users\sebas\Downloads\Topografia\flutter\android\app\src\main\AndroidManifest.xml:10:9-43
+		ADDED from C:\Users\sebas\Desktop\TopografiaApps2023\android\app\src\main\AndroidManifest.xml:10:9-43
 	android:name
-		INJECTED from C:\Users\sebas\Downloads\Topografia\flutter\android\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\sebas\Downloads\Topografia\flutter\android\app\src\main\AndroidManifest.xml:9:9-42
+		INJECTED from C:\Users\sebas\Desktop\TopografiaApps2023\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\sebas\Desktop\TopografiaApps2023\android\app\src\main\AndroidManifest.xml:9:9-42
 manifest
-ADDED from C:\Users\sebas\Downloads\Topografia\flutter\android\app\src\main\AndroidManifest.xml:1:1-42:12
-INJECTED from C:\Users\sebas\Downloads\Topografia\flutter\android\app\src\main\AndroidManifest.xml:1:1-42:12
-INJECTED from C:\Users\sebas\Downloads\Topografia\flutter\android\app\src\main\AndroidManifest.xml:1:1-42:12
-INJECTED from C:\Users\sebas\Downloads\Topografia\flutter\android\app\src\main\AndroidManifest.xml:1:1-42:12
-MERGED from [:firebase_database] C:\Users\sebas\Downloads\Topografia\flutter\build\firebase_database\intermediates\merged_manifest\release\AndroidManifest.xml:2:1-17:12
-MERGED from [:cloud_firestore] C:\Users\sebas\Downloads\Topografia\flutter\build\cloud_firestore\intermediates\merged_manifest\release\AndroidManifest.xml:2:1-17:12
-MERGED from [:firebase_dynamic_links] C:\Users\sebas\Downloads\Topografia\flutter\build\firebase_dynamic_links\intermediates\merged_manifest\release\AndroidManifest.xml:2:1-19:12
-MERGED from [:firebase_auth] C:\Users\sebas\Downloads\Topografia\flutter\build\firebase_auth\intermediates\merged_manifest\release\AndroidManifest.xml:2:1-17:12
-MERGED from [:firebase_storage] C:\Users\sebas\Downloads\Topografia\flutter\build\firebase_storage\intermediates\merged_manifest\release\AndroidManifest.xml:2:1-17:12
-MERGED from [:firebase_core] C:\Users\sebas\Downloads\Topografia\flutter\build\firebase_core\intermediates\merged_manifest\release\AndroidManifest.xml:2:1-17:12
-MERGED from [:geolocator_android] C:\Users\sebas\Downloads\Topografia\flutter\build\geolocator_android\intermediates\merged_manifest\release\AndroidManifest.xml:2:1-17:12
-MERGED from [:google_maps_flutter_android] C:\Users\sebas\Downloads\Topografia\flutter\build\google_maps_flutter_android\intermediates\merged_manifest\release\AndroidManifest.xml:2:1-9:12
-MERGED from [:flutter_plugin_android_lifecycle] C:\Users\sebas\Downloads\Topografia\flutter\build\flutter_plugin_android_lifecycle\intermediates\merged_manifest\release\AndroidManifest.xml:2:1-9:12
-MERGED from [:path_provider_android] C:\Users\sebas\Downloads\Topografia\flutter\build\path_provider_android\intermediates\merged_manifest\release\AndroidManifest.xml:2:1-9:12
-MERGED from [:desktop_webview_auth] C:\Users\sebas\Downloads\Topografia\flutter\build\desktop_webview_auth\intermediates\merged_manifest\release\AndroidManifest.xml:2:1-9:12
-MERGED from [:flutter_native_splash] C:\Users\sebas\Downloads\Topografia\flutter\build\flutter_native_splash\intermediates\merged_manifest\release\AndroidManifest.xml:2:1-9:12
-MERGED from [:workmanager] C:\Users\sebas\Downloads\Topografia\flutter\build\workmanager\intermediates\merged_manifest\release\AndroidManifest.xml:2:1-9:12
+ADDED from C:\Users\sebas\Desktop\TopografiaApps2023\android\app\src\main\AndroidManifest.xml:1:1-42:12
+INJECTED from C:\Users\sebas\Desktop\TopografiaApps2023\android\app\src\main\AndroidManifest.xml:1:1-42:12
+INJECTED from C:\Users\sebas\Desktop\TopografiaApps2023\android\app\src\main\AndroidManifest.xml:1:1-42:12
+INJECTED from C:\Users\sebas\Desktop\TopografiaApps2023\android\app\src\main\AndroidManifest.xml:1:1-42:12
+MERGED from [:firebase_database] C:\Users\sebas\Desktop\TopografiaApps2023\build\firebase_database\intermediates\merged_manifest\release\AndroidManifest.xml:2:1-17:12
+MERGED from [:cloud_firestore] C:\Users\sebas\Desktop\TopografiaApps2023\build\cloud_firestore\intermediates\merged_manifest\release\AndroidManifest.xml:2:1-17:12
+MERGED from [:firebase_dynamic_links] C:\Users\sebas\Desktop\TopografiaApps2023\build\firebase_dynamic_links\intermediates\merged_manifest\release\AndroidManifest.xml:2:1-19:12
+MERGED from [:firebase_auth] C:\Users\sebas\Desktop\TopografiaApps2023\build\firebase_auth\intermediates\merged_manifest\release\AndroidManifest.xml:2:1-17:12
+MERGED from [:firebase_storage] C:\Users\sebas\Desktop\TopografiaApps2023\build\firebase_storage\intermediates\merged_manifest\release\AndroidManifest.xml:2:1-17:12
+MERGED from [:firebase_core] C:\Users\sebas\Desktop\TopografiaApps2023\build\firebase_core\intermediates\merged_manifest\release\AndroidManifest.xml:2:1-17:12
+MERGED from [:geolocator_android] C:\Users\sebas\Desktop\TopografiaApps2023\build\geolocator_android\intermediates\merged_manifest\release\AndroidManifest.xml:2:1-17:12
+MERGED from [:google_maps_flutter_android] C:\Users\sebas\Desktop\TopografiaApps2023\build\google_maps_flutter_android\intermediates\merged_manifest\release\AndroidManifest.xml:2:1-9:12
+MERGED from [:flutter_plugin_android_lifecycle] C:\Users\sebas\Desktop\TopografiaApps2023\build\flutter_plugin_android_lifecycle\intermediates\merged_manifest\release\AndroidManifest.xml:2:1-9:12
+MERGED from [:path_provider_android] C:\Users\sebas\Desktop\TopografiaApps2023\build\path_provider_android\intermediates\merged_manifest\release\AndroidManifest.xml:2:1-9:12
+MERGED from [:desktop_webview_auth] C:\Users\sebas\Desktop\TopografiaApps2023\build\desktop_webview_auth\intermediates\merged_manifest\release\AndroidManifest.xml:2:1-9:12
+MERGED from [:flutter_native_splash] C:\Users\sebas\Desktop\TopografiaApps2023\build\flutter_native_splash\intermediates\merged_manifest\release\AndroidManifest.xml:2:1-9:12
+MERGED from [:workmanager] C:\Users\sebas\Desktop\TopografiaApps2023\build\workmanager\intermediates\merged_manifest\release\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.firebase:firebase-database:20.3.0] C:\Users\sebas\.gradle\caches\transforms-3\7a645591ab524145f9f0597a0db794ea\transformed\jetified-firebase-database-20.3.0\AndroidManifest.xml:15:1-38:12
 MERGED from [com.google.firebase:firebase-firestore:24.10.2] C:\Users\sebas\.gradle\caches\transforms-3\ca42e3c19ab2b91f9cb5ad64da224c7d\transformed\jetified-firebase-firestore-24.10.2\AndroidManifest.xml:2:1-26:12
 MERGED from [com.google.firebase:firebase-dynamic-links:21.2.0] C:\Users\sebas\.gradle\caches\transforms-3\b4609656fcca1a5322066dffe5d49325\transformed\jetified-firebase-dynamic-links-21.2.0\AndroidManifest.xml:15:1-33:12
@@ -137,71 +137,71 @@ MERGED from [androidx.sqlite:sqlite:2.3.0] C:\Users\sebas\.gradle\caches\transfo
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\sebas\.gradle\caches\transforms-3\45f58893a3b395d9758df204f662699b\transformed\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:17:1-22:12
 MERGED from [io.grpc:grpc-android:1.57.2] C:\Users\sebas\.gradle\caches\transforms-3\7ba51c26100aff48253229ea997417ed\transformed\jetified-grpc-android-1.57.2\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\sebas\.gradle\caches\transforms-3\c9810c0b70e5d1fc52e19ee0743deb85\transformed\jetified-protolite-well-known-types-18.0.0\AndroidManifest.xml:2:1-11:12
-INJECTED from C:\Users\sebas\Downloads\Topografia\flutter\android\app\src\main\AndroidManifest.xml:1:1-42:12
-INJECTED from C:\Users\sebas\Downloads\Topografia\flutter\android\app\src\main\AndroidManifest.xml:1:1-42:12
-INJECTED from C:\Users\sebas\Downloads\Topografia\flutter\android\app\src\main\AndroidManifest.xml:1:1-42:12
+INJECTED from C:\Users\sebas\Desktop\TopografiaApps2023\android\app\src\main\AndroidManifest.xml:1:1-42:12
+INJECTED from C:\Users\sebas\Desktop\TopografiaApps2023\android\app\src\main\AndroidManifest.xml:1:1-42:12
+INJECTED from C:\Users\sebas\Desktop\TopografiaApps2023\android\app\src\main\AndroidManifest.xml:1:1-42:12
 	package
-		INJECTED from C:\Users\sebas\Downloads\Topografia\flutter\android\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\sebas\Downloads\Topografia\flutter\android\app\src\main\AndroidManifest.xml:1:1-42:12
-		INJECTED from C:\Users\sebas\Downloads\Topografia\flutter\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\sebas\Desktop\TopografiaApps2023\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\sebas\Desktop\TopografiaApps2023\android\app\src\main\AndroidManifest.xml:1:1-42:12
+		INJECTED from C:\Users\sebas\Desktop\TopografiaApps2023\android\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\sebas\Downloads\Topografia\flutter\android\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\sebas\Downloads\Topografia\flutter\android\app\src\main\AndroidManifest.xml:1:1-42:12
-		INJECTED from C:\Users\sebas\Downloads\Topografia\flutter\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\sebas\Desktop\TopografiaApps2023\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\sebas\Desktop\TopografiaApps2023\android\app\src\main\AndroidManifest.xml:1:1-42:12
+		INJECTED from C:\Users\sebas\Desktop\TopografiaApps2023\android\app\src\main\AndroidManifest.xml
 	android:versionCode
-		INJECTED from C:\Users\sebas\Downloads\Topografia\flutter\android\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\sebas\Downloads\Topografia\flutter\android\app\src\main\AndroidManifest.xml:1:1-42:12
-		INJECTED from C:\Users\sebas\Downloads\Topografia\flutter\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\sebas\Desktop\TopografiaApps2023\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\sebas\Desktop\TopografiaApps2023\android\app\src\main\AndroidManifest.xml:1:1-42:12
+		INJECTED from C:\Users\sebas\Desktop\TopografiaApps2023\android\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\sebas\Downloads\Topografia\flutter\android\app\src\main\AndroidManifest.xml:1:11-69
+		ADDED from C:\Users\sebas\Desktop\TopografiaApps2023\android\app\src\main\AndroidManifest.xml:1:11-69
 uses-permission#android.permission.FOREGROUND_SERVICE
-ADDED from C:\Users\sebas\Downloads\Topografia\flutter\android\app\src\main\AndroidManifest.xml:3:5-77
+ADDED from C:\Users\sebas\Desktop\TopografiaApps2023\android\app\src\main\AndroidManifest.xml:3:5-77
 MERGED from [androidx.work:work-runtime:2.8.1] C:\Users\sebas\.gradle\caches\transforms-3\31772ead652150352ef9bd892626c3a3\transformed\work-runtime-2.8.1\AndroidManifest.xml:26:5-77
 MERGED from [androidx.work:work-runtime:2.8.1] C:\Users\sebas\.gradle\caches\transforms-3\31772ead652150352ef9bd892626c3a3\transformed\work-runtime-2.8.1\AndroidManifest.xml:26:5-77
 	android:name
-		ADDED from C:\Users\sebas\Downloads\Topografia\flutter\android\app\src\main\AndroidManifest.xml:3:22-74
+		ADDED from C:\Users\sebas\Desktop\TopografiaApps2023\android\app\src\main\AndroidManifest.xml:3:22-74
 uses-permission#android.permission.ACCESS_BACKGROUND_LOCATION
-ADDED from C:\Users\sebas\Downloads\Topografia\flutter\android\app\src\main\AndroidManifest.xml:4:5-85
+ADDED from C:\Users\sebas\Desktop\TopografiaApps2023\android\app\src\main\AndroidManifest.xml:4:5-85
 	android:name
-		ADDED from C:\Users\sebas\Downloads\Topografia\flutter\android\app\src\main\AndroidManifest.xml:4:22-82
+		ADDED from C:\Users\sebas\Desktop\TopografiaApps2023\android\app\src\main\AndroidManifest.xml:4:22-82
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from C:\Users\sebas\Downloads\Topografia\flutter\android\app\src\main\AndroidManifest.xml:5:5-79
+ADDED from C:\Users\sebas\Desktop\TopografiaApps2023\android\app\src\main\AndroidManifest.xml:5:5-79
 	android:name
-		ADDED from C:\Users\sebas\Downloads\Topografia\flutter\android\app\src\main\AndroidManifest.xml:5:22-76
+		ADDED from C:\Users\sebas\Desktop\TopografiaApps2023\android\app\src\main\AndroidManifest.xml:5:22-76
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from C:\Users\sebas\Downloads\Topografia\flutter\android\app\src\main\AndroidManifest.xml:6:5-81
+ADDED from C:\Users\sebas\Desktop\TopografiaApps2023\android\app\src\main\AndroidManifest.xml:6:5-81
 	android:name
-		ADDED from C:\Users\sebas\Downloads\Topografia\flutter\android\app\src\main\AndroidManifest.xml:6:22-78
+		ADDED from C:\Users\sebas\Desktop\TopografiaApps2023\android\app\src\main\AndroidManifest.xml:6:22-78
 uses-sdk
-INJECTED from C:\Users\sebas\Downloads\Topografia\flutter\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\Users\sebas\Downloads\Topografia\flutter\android\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\sebas\Downloads\Topografia\flutter\android\app\src\main\AndroidManifest.xml
-MERGED from [:firebase_database] C:\Users\sebas\Downloads\Topografia\flutter\build\firebase_database\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
-MERGED from [:firebase_database] C:\Users\sebas\Downloads\Topografia\flutter\build\firebase_database\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
-MERGED from [:cloud_firestore] C:\Users\sebas\Downloads\Topografia\flutter\build\cloud_firestore\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
-MERGED from [:cloud_firestore] C:\Users\sebas\Downloads\Topografia\flutter\build\cloud_firestore\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
-MERGED from [:firebase_dynamic_links] C:\Users\sebas\Downloads\Topografia\flutter\build\firebase_dynamic_links\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
-MERGED from [:firebase_dynamic_links] C:\Users\sebas\Downloads\Topografia\flutter\build\firebase_dynamic_links\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
-MERGED from [:firebase_auth] C:\Users\sebas\Downloads\Topografia\flutter\build\firebase_auth\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
-MERGED from [:firebase_auth] C:\Users\sebas\Downloads\Topografia\flutter\build\firebase_auth\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
-MERGED from [:firebase_storage] C:\Users\sebas\Downloads\Topografia\flutter\build\firebase_storage\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
-MERGED from [:firebase_storage] C:\Users\sebas\Downloads\Topografia\flutter\build\firebase_storage\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
-MERGED from [:firebase_core] C:\Users\sebas\Downloads\Topografia\flutter\build\firebase_core\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
-MERGED from [:firebase_core] C:\Users\sebas\Downloads\Topografia\flutter\build\firebase_core\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
-MERGED from [:geolocator_android] C:\Users\sebas\Downloads\Topografia\flutter\build\geolocator_android\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
-MERGED from [:geolocator_android] C:\Users\sebas\Downloads\Topografia\flutter\build\geolocator_android\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
-MERGED from [:google_maps_flutter_android] C:\Users\sebas\Downloads\Topografia\flutter\build\google_maps_flutter_android\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
-MERGED from [:google_maps_flutter_android] C:\Users\sebas\Downloads\Topografia\flutter\build\google_maps_flutter_android\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
-MERGED from [:flutter_plugin_android_lifecycle] C:\Users\sebas\Downloads\Topografia\flutter\build\flutter_plugin_android_lifecycle\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
-MERGED from [:flutter_plugin_android_lifecycle] C:\Users\sebas\Downloads\Topografia\flutter\build\flutter_plugin_android_lifecycle\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
-MERGED from [:path_provider_android] C:\Users\sebas\Downloads\Topografia\flutter\build\path_provider_android\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
-MERGED from [:path_provider_android] C:\Users\sebas\Downloads\Topografia\flutter\build\path_provider_android\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
-MERGED from [:desktop_webview_auth] C:\Users\sebas\Downloads\Topografia\flutter\build\desktop_webview_auth\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
-MERGED from [:desktop_webview_auth] C:\Users\sebas\Downloads\Topografia\flutter\build\desktop_webview_auth\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
-MERGED from [:flutter_native_splash] C:\Users\sebas\Downloads\Topografia\flutter\build\flutter_native_splash\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
-MERGED from [:flutter_native_splash] C:\Users\sebas\Downloads\Topografia\flutter\build\flutter_native_splash\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
-MERGED from [:workmanager] C:\Users\sebas\Downloads\Topografia\flutter\build\workmanager\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
-MERGED from [:workmanager] C:\Users\sebas\Downloads\Topografia\flutter\build\workmanager\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
+INJECTED from C:\Users\sebas\Desktop\TopografiaApps2023\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\sebas\Desktop\TopografiaApps2023\android\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\sebas\Desktop\TopografiaApps2023\android\app\src\main\AndroidManifest.xml
+MERGED from [:firebase_database] C:\Users\sebas\Desktop\TopografiaApps2023\build\firebase_database\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
+MERGED from [:firebase_database] C:\Users\sebas\Desktop\TopografiaApps2023\build\firebase_database\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
+MERGED from [:cloud_firestore] C:\Users\sebas\Desktop\TopografiaApps2023\build\cloud_firestore\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
+MERGED from [:cloud_firestore] C:\Users\sebas\Desktop\TopografiaApps2023\build\cloud_firestore\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
+MERGED from [:firebase_dynamic_links] C:\Users\sebas\Desktop\TopografiaApps2023\build\firebase_dynamic_links\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
+MERGED from [:firebase_dynamic_links] C:\Users\sebas\Desktop\TopografiaApps2023\build\firebase_dynamic_links\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
+MERGED from [:firebase_auth] C:\Users\sebas\Desktop\TopografiaApps2023\build\firebase_auth\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
+MERGED from [:firebase_auth] C:\Users\sebas\Desktop\TopografiaApps2023\build\firebase_auth\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
+MERGED from [:firebase_storage] C:\Users\sebas\Desktop\TopografiaApps2023\build\firebase_storage\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
+MERGED from [:firebase_storage] C:\Users\sebas\Desktop\TopografiaApps2023\build\firebase_storage\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
+MERGED from [:firebase_core] C:\Users\sebas\Desktop\TopografiaApps2023\build\firebase_core\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
+MERGED from [:firebase_core] C:\Users\sebas\Desktop\TopografiaApps2023\build\firebase_core\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
+MERGED from [:geolocator_android] C:\Users\sebas\Desktop\TopografiaApps2023\build\geolocator_android\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
+MERGED from [:geolocator_android] C:\Users\sebas\Desktop\TopografiaApps2023\build\geolocator_android\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
+MERGED from [:google_maps_flutter_android] C:\Users\sebas\Desktop\TopografiaApps2023\build\google_maps_flutter_android\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
+MERGED from [:google_maps_flutter_android] C:\Users\sebas\Desktop\TopografiaApps2023\build\google_maps_flutter_android\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
+MERGED from [:flutter_plugin_android_lifecycle] C:\Users\sebas\Desktop\TopografiaApps2023\build\flutter_plugin_android_lifecycle\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
+MERGED from [:flutter_plugin_android_lifecycle] C:\Users\sebas\Desktop\TopografiaApps2023\build\flutter_plugin_android_lifecycle\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
+MERGED from [:path_provider_android] C:\Users\sebas\Desktop\TopografiaApps2023\build\path_provider_android\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
+MERGED from [:path_provider_android] C:\Users\sebas\Desktop\TopografiaApps2023\build\path_provider_android\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
+MERGED from [:desktop_webview_auth] C:\Users\sebas\Desktop\TopografiaApps2023\build\desktop_webview_auth\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
+MERGED from [:desktop_webview_auth] C:\Users\sebas\Desktop\TopografiaApps2023\build\desktop_webview_auth\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
+MERGED from [:flutter_native_splash] C:\Users\sebas\Desktop\TopografiaApps2023\build\flutter_native_splash\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
+MERGED from [:flutter_native_splash] C:\Users\sebas\Desktop\TopografiaApps2023\build\flutter_native_splash\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
+MERGED from [:workmanager] C:\Users\sebas\Desktop\TopografiaApps2023\build\workmanager\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
+MERGED from [:workmanager] C:\Users\sebas\Desktop\TopografiaApps2023\build\workmanager\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.firebase:firebase-database:20.3.0] C:\Users\sebas\.gradle\caches\transforms-3\7a645591ab524145f9f0597a0db794ea\transformed\jetified-firebase-database-20.3.0\AndroidManifest.xml:18:5-44
 MERGED from [com.google.firebase:firebase-database:20.3.0] C:\Users\sebas\.gradle\caches\transforms-3\7a645591ab524145f9f0597a0db794ea\transformed\jetified-firebase-database-20.3.0\AndroidManifest.xml:18:5-44
 MERGED from [com.google.firebase:firebase-firestore:24.10.2] C:\Users\sebas\.gradle\caches\transforms-3\ca42e3c19ab2b91f9cb5ad64da224c7d\transformed\jetified-firebase-firestore-24.10.2\AndroidManifest.xml:6:5-44
@@ -300,74 +300,74 @@ MERGED from [io.grpc:grpc-android:1.57.2] C:\Users\sebas\.gradle\caches\transfor
 MERGED from [io.grpc:grpc-android:1.57.2] C:\Users\sebas\.gradle\caches\transforms-3\7ba51c26100aff48253229ea997417ed\transformed\jetified-grpc-android-1.57.2\AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\sebas\.gradle\caches\transforms-3\c9810c0b70e5d1fc52e19ee0743deb85\transformed\jetified-protolite-well-known-types-18.0.0\AndroidManifest.xml:7:5-9:41
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\sebas\.gradle\caches\transforms-3\c9810c0b70e5d1fc52e19ee0743deb85\transformed\jetified-protolite-well-known-types-18.0.0\AndroidManifest.xml:7:5-9:41
-INJECTED from C:\Users\sebas\Downloads\Topografia\flutter\android\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\sebas\Downloads\Topografia\flutter\android\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\sebas\Desktop\TopografiaApps2023\android\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\sebas\Desktop\TopografiaApps2023\android\app\src\main\AndroidManifest.xml
 	tools:overrideLibrary
 		ADDED from [com.google.firebase:firebase-auth:22.3.1] C:\Users\sebas\.gradle\caches\transforms-3\86feba03724c3c01cf5c2c40fcdf43d5\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:23:9-61
 	android:targetSdkVersion
-		INJECTED from C:\Users\sebas\Downloads\Topografia\flutter\android\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\sebas\Downloads\Topografia\flutter\android\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\sebas\Downloads\Topografia\flutter\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\sebas\Desktop\TopografiaApps2023\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\sebas\Desktop\TopografiaApps2023\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\sebas\Desktop\TopografiaApps2023\android\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\sebas\Downloads\Topografia\flutter\android\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\sebas\Downloads\Topografia\flutter\android\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\sebas\Downloads\Topografia\flutter\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\sebas\Desktop\TopografiaApps2023\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\sebas\Desktop\TopografiaApps2023\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\sebas\Desktop\TopografiaApps2023\android\app\src\main\AndroidManifest.xml
 activity#com.example.gtk_flutter.MainActivity
-ADDED from C:\Users\sebas\Downloads\Topografia\flutter\android\app\src\main\AndroidManifest.xml:11:9-31:20
+ADDED from C:\Users\sebas\Desktop\TopografiaApps2023\android\app\src\main\AndroidManifest.xml:11:9-31:20
 	android:launchMode
-		ADDED from C:\Users\sebas\Downloads\Topografia\flutter\android\app\src\main\AndroidManifest.xml:14:13-43
+		ADDED from C:\Users\sebas\Desktop\TopografiaApps2023\android\app\src\main\AndroidManifest.xml:14:13-43
 	android:hardwareAccelerated
-		ADDED from C:\Users\sebas\Downloads\Topografia\flutter\android\app\src\main\AndroidManifest.xml:17:13-47
+		ADDED from C:\Users\sebas\Desktop\TopografiaApps2023\android\app\src\main\AndroidManifest.xml:17:13-47
 	android:windowSoftInputMode
-		ADDED from C:\Users\sebas\Downloads\Topografia\flutter\android\app\src\main\AndroidManifest.xml:18:13-55
+		ADDED from C:\Users\sebas\Desktop\TopografiaApps2023\android\app\src\main\AndroidManifest.xml:18:13-55
 	android:exported
-		ADDED from C:\Users\sebas\Downloads\Topografia\flutter\android\app\src\main\AndroidManifest.xml:13:13-36
+		ADDED from C:\Users\sebas\Desktop\TopografiaApps2023\android\app\src\main\AndroidManifest.xml:13:13-36
 	android:configChanges
-		ADDED from C:\Users\sebas\Downloads\Topografia\flutter\android\app\src\main\AndroidManifest.xml:16:13-163
+		ADDED from C:\Users\sebas\Desktop\TopografiaApps2023\android\app\src\main\AndroidManifest.xml:16:13-163
 	android:theme
-		ADDED from C:\Users\sebas\Downloads\Topografia\flutter\android\app\src\main\AndroidManifest.xml:15:13-47
+		ADDED from C:\Users\sebas\Desktop\TopografiaApps2023\android\app\src\main\AndroidManifest.xml:15:13-47
 	android:name
-		ADDED from C:\Users\sebas\Downloads\Topografia\flutter\android\app\src\main\AndroidManifest.xml:12:13-41
+		ADDED from C:\Users\sebas\Desktop\TopografiaApps2023\android\app\src\main\AndroidManifest.xml:12:13-41
 meta-data#io.flutter.embedding.android.NormalTheme
-ADDED from C:\Users\sebas\Downloads\Topografia\flutter\android\app\src\main\AndroidManifest.xml:23:13-26:15
+ADDED from C:\Users\sebas\Desktop\TopografiaApps2023\android\app\src\main\AndroidManifest.xml:23:13-26:15
 	android:resource
-		ADDED from C:\Users\sebas\Downloads\Topografia\flutter\android\app\src\main\AndroidManifest.xml:25:17-54
+		ADDED from C:\Users\sebas\Desktop\TopografiaApps2023\android\app\src\main\AndroidManifest.xml:25:17-54
 	android:name
-		ADDED from C:\Users\sebas\Downloads\Topografia\flutter\android\app\src\main\AndroidManifest.xml:24:17-72
+		ADDED from C:\Users\sebas\Desktop\TopografiaApps2023\android\app\src\main\AndroidManifest.xml:24:17-72
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\sebas\Downloads\Topografia\flutter\android\app\src\main\AndroidManifest.xml:27:13-30:29
+ADDED from C:\Users\sebas\Desktop\TopografiaApps2023\android\app\src\main\AndroidManifest.xml:27:13-30:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\sebas\Downloads\Topografia\flutter\android\app\src\main\AndroidManifest.xml:28:17-69
+ADDED from C:\Users\sebas\Desktop\TopografiaApps2023\android\app\src\main\AndroidManifest.xml:28:17-69
 	android:name
-		ADDED from C:\Users\sebas\Downloads\Topografia\flutter\android\app\src\main\AndroidManifest.xml:28:25-66
+		ADDED from C:\Users\sebas\Desktop\TopografiaApps2023\android\app\src\main\AndroidManifest.xml:28:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\sebas\Downloads\Topografia\flutter\android\app\src\main\AndroidManifest.xml:29:17-77
+ADDED from C:\Users\sebas\Desktop\TopografiaApps2023\android\app\src\main\AndroidManifest.xml:29:17-77
 	android:name
-		ADDED from C:\Users\sebas\Downloads\Topografia\flutter\android\app\src\main\AndroidManifest.xml:29:27-74
+		ADDED from C:\Users\sebas\Desktop\TopografiaApps2023\android\app\src\main\AndroidManifest.xml:29:27-74
 meta-data#flutterEmbedding
-ADDED from C:\Users\sebas\Downloads\Topografia\flutter\android\app\src\main\AndroidManifest.xml:34:9-36:33
+ADDED from C:\Users\sebas\Desktop\TopografiaApps2023\android\app\src\main\AndroidManifest.xml:34:9-36:33
 	android:value
-		ADDED from C:\Users\sebas\Downloads\Topografia\flutter\android\app\src\main\AndroidManifest.xml:36:13-30
+		ADDED from C:\Users\sebas\Desktop\TopografiaApps2023\android\app\src\main\AndroidManifest.xml:36:13-30
 	android:name
-		ADDED from C:\Users\sebas\Downloads\Topografia\flutter\android\app\src\main\AndroidManifest.xml:35:13-44
+		ADDED from C:\Users\sebas\Desktop\TopografiaApps2023\android\app\src\main\AndroidManifest.xml:35:13-44
 meta-data#com.google.android.geo.API_KEY
-ADDED from C:\Users\sebas\Downloads\Topografia\flutter\android\app\src\main\AndroidManifest.xml:38:9-40:71
+ADDED from C:\Users\sebas\Desktop\TopografiaApps2023\android\app\src\main\AndroidManifest.xml:38:9-40:71
 	android:value
-		ADDED from C:\Users\sebas\Downloads\Topografia\flutter\android\app\src\main\AndroidManifest.xml:40:13-68
+		ADDED from C:\Users\sebas\Desktop\TopografiaApps2023\android\app\src\main\AndroidManifest.xml:40:13-68
 	android:name
-		ADDED from C:\Users\sebas\Downloads\Topografia\flutter\android\app\src\main\AndroidManifest.xml:39:13-58
+		ADDED from C:\Users\sebas\Desktop\TopografiaApps2023\android\app\src\main\AndroidManifest.xml:39:13-58
 service#com.google.firebase.components.ComponentDiscoveryService
-ADDED from [:firebase_database] C:\Users\sebas\Downloads\Topografia\flutter\build\firebase_database\intermediates\merged_manifest\release\AndroidManifest.xml:10:9-14:19
-MERGED from [:cloud_firestore] C:\Users\sebas\Downloads\Topografia\flutter\build\cloud_firestore\intermediates\merged_manifest\release\AndroidManifest.xml:10:9-14:19
-MERGED from [:cloud_firestore] C:\Users\sebas\Downloads\Topografia\flutter\build\cloud_firestore\intermediates\merged_manifest\release\AndroidManifest.xml:10:9-14:19
-MERGED from [:firebase_dynamic_links] C:\Users\sebas\Downloads\Topografia\flutter\build\firebase_dynamic_links\intermediates\merged_manifest\release\AndroidManifest.xml:12:9-16:19
-MERGED from [:firebase_dynamic_links] C:\Users\sebas\Downloads\Topografia\flutter\build\firebase_dynamic_links\intermediates\merged_manifest\release\AndroidManifest.xml:12:9-16:19
-MERGED from [:firebase_auth] C:\Users\sebas\Downloads\Topografia\flutter\build\firebase_auth\intermediates\merged_manifest\release\AndroidManifest.xml:10:9-14:19
-MERGED from [:firebase_auth] C:\Users\sebas\Downloads\Topografia\flutter\build\firebase_auth\intermediates\merged_manifest\release\AndroidManifest.xml:10:9-14:19
-MERGED from [:firebase_storage] C:\Users\sebas\Downloads\Topografia\flutter\build\firebase_storage\intermediates\merged_manifest\release\AndroidManifest.xml:10:9-14:19
-MERGED from [:firebase_storage] C:\Users\sebas\Downloads\Topografia\flutter\build\firebase_storage\intermediates\merged_manifest\release\AndroidManifest.xml:10:9-14:19
-MERGED from [:firebase_core] C:\Users\sebas\Downloads\Topografia\flutter\build\firebase_core\intermediates\merged_manifest\release\AndroidManifest.xml:10:9-14:19
-MERGED from [:firebase_core] C:\Users\sebas\Downloads\Topografia\flutter\build\firebase_core\intermediates\merged_manifest\release\AndroidManifest.xml:10:9-14:19
+ADDED from [:firebase_database] C:\Users\sebas\Desktop\TopografiaApps2023\build\firebase_database\intermediates\merged_manifest\release\AndroidManifest.xml:10:9-14:19
+MERGED from [:cloud_firestore] C:\Users\sebas\Desktop\TopografiaApps2023\build\cloud_firestore\intermediates\merged_manifest\release\AndroidManifest.xml:10:9-14:19
+MERGED from [:cloud_firestore] C:\Users\sebas\Desktop\TopografiaApps2023\build\cloud_firestore\intermediates\merged_manifest\release\AndroidManifest.xml:10:9-14:19
+MERGED from [:firebase_dynamic_links] C:\Users\sebas\Desktop\TopografiaApps2023\build\firebase_dynamic_links\intermediates\merged_manifest\release\AndroidManifest.xml:12:9-16:19
+MERGED from [:firebase_dynamic_links] C:\Users\sebas\Desktop\TopografiaApps2023\build\firebase_dynamic_links\intermediates\merged_manifest\release\AndroidManifest.xml:12:9-16:19
+MERGED from [:firebase_auth] C:\Users\sebas\Desktop\TopografiaApps2023\build\firebase_auth\intermediates\merged_manifest\release\AndroidManifest.xml:10:9-14:19
+MERGED from [:firebase_auth] C:\Users\sebas\Desktop\TopografiaApps2023\build\firebase_auth\intermediates\merged_manifest\release\AndroidManifest.xml:10:9-14:19
+MERGED from [:firebase_storage] C:\Users\sebas\Desktop\TopografiaApps2023\build\firebase_storage\intermediates\merged_manifest\release\AndroidManifest.xml:10:9-14:19
+MERGED from [:firebase_storage] C:\Users\sebas\Desktop\TopografiaApps2023\build\firebase_storage\intermediates\merged_manifest\release\AndroidManifest.xml:10:9-14:19
+MERGED from [:firebase_core] C:\Users\sebas\Desktop\TopografiaApps2023\build\firebase_core\intermediates\merged_manifest\release\AndroidManifest.xml:10:9-14:19
+MERGED from [:firebase_core] C:\Users\sebas\Desktop\TopografiaApps2023\build\firebase_core\intermediates\merged_manifest\release\AndroidManifest.xml:10:9-14:19
 MERGED from [com.google.firebase:firebase-database:20.3.0] C:\Users\sebas\.gradle\caches\transforms-3\7a645591ab524145f9f0597a0db794ea\transformed\jetified-firebase-database-20.3.0\AndroidManifest.xml:26:9-35:19
 MERGED from [com.google.firebase:firebase-database:20.3.0] C:\Users\sebas\.gradle\caches\transforms-3\7a645591ab524145f9f0597a0db794ea\transformed\jetified-firebase-database-20.3.0\AndroidManifest.xml:26:9-35:19
 MERGED from [com.google.firebase:firebase-firestore:24.10.2] C:\Users\sebas\.gradle\caches\transforms-3\ca42e3c19ab2b91f9cb5ad64da224c7d\transformed\jetified-firebase-firestore-24.10.2\AndroidManifest.xml:14:9-23:19
@@ -391,21 +391,21 @@ MERGED from [com.google.firebase:firebase-common:20.4.2] C:\Users\sebas\.gradle\
 	android:directBootAware
 		ADDED from [com.google.firebase:firebase-common:20.4.2] C:\Users\sebas\.gradle\caches\transforms-3\8adc41e1868e9d15f43c78d8ff0d3012\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:32:13-43
 	android:name
-		ADDED from [:firebase_database] C:\Users\sebas\Downloads\Topografia\flutter\build\firebase_database\intermediates\merged_manifest\release\AndroidManifest.xml:10:18-89
+		ADDED from [:firebase_database] C:\Users\sebas\Desktop\TopografiaApps2023\build\firebase_database\intermediates\merged_manifest\release\AndroidManifest.xml:10:18-89
 meta-data#com.google.firebase.components:io.flutter.plugins.firebase.database.FlutterFirebaseAppRegistrar
-ADDED from [:firebase_database] C:\Users\sebas\Downloads\Topografia\flutter\build\firebase_database\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-13:85
+ADDED from [:firebase_database] C:\Users\sebas\Desktop\TopografiaApps2023\build\firebase_database\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-13:85
 	android:value
-		ADDED from [:firebase_database] C:\Users\sebas\Downloads\Topografia\flutter\build\firebase_database\intermediates\merged_manifest\release\AndroidManifest.xml:13:17-82
+		ADDED from [:firebase_database] C:\Users\sebas\Desktop\TopografiaApps2023\build\firebase_database\intermediates\merged_manifest\release\AndroidManifest.xml:13:17-82
 	android:name
-		ADDED from [:firebase_database] C:\Users\sebas\Downloads\Topografia\flutter\build\firebase_database\intermediates\merged_manifest\release\AndroidManifest.xml:12:17-127
+		ADDED from [:firebase_database] C:\Users\sebas\Desktop\TopografiaApps2023\build\firebase_database\intermediates\merged_manifest\release\AndroidManifest.xml:12:17-127
 meta-data#com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar
-ADDED from [:cloud_firestore] C:\Users\sebas\Downloads\Topografia\flutter\build\cloud_firestore\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-13:85
+ADDED from [:cloud_firestore] C:\Users\sebas\Desktop\TopografiaApps2023\build\cloud_firestore\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-13:85
 	android:value
-		ADDED from [:cloud_firestore] C:\Users\sebas\Downloads\Topografia\flutter\build\cloud_firestore\intermediates\merged_manifest\release\AndroidManifest.xml:13:17-82
+		ADDED from [:cloud_firestore] C:\Users\sebas\Desktop\TopografiaApps2023\build\cloud_firestore\intermediates\merged_manifest\release\AndroidManifest.xml:13:17-82
 	android:name
-		ADDED from [:cloud_firestore] C:\Users\sebas\Downloads\Topografia\flutter\build\cloud_firestore\intermediates\merged_manifest\release\AndroidManifest.xml:12:17-134
+		ADDED from [:cloud_firestore] C:\Users\sebas\Desktop\TopografiaApps2023\build\cloud_firestore\intermediates\merged_manifest\release\AndroidManifest.xml:12:17-134
 uses-permission#android.permission.INTERNET
-ADDED from [:firebase_dynamic_links] C:\Users\sebas\Downloads\Topografia\flutter\build\firebase_dynamic_links\intermediates\merged_manifest\release\AndroidManifest.xml:9:5-67
+ADDED from [:firebase_dynamic_links] C:\Users\sebas\Desktop\TopografiaApps2023\build\firebase_dynamic_links\intermediates\merged_manifest\release\AndroidManifest.xml:9:5-67
 MERGED from [com.google.firebase:firebase-database:20.3.0] C:\Users\sebas\.gradle\caches\transforms-3\7a645591ab524145f9f0597a0db794ea\transformed\jetified-firebase-database-20.3.0\AndroidManifest.xml:23:5-67
 MERGED from [com.google.firebase:firebase-database:20.3.0] C:\Users\sebas\.gradle\caches\transforms-3\7a645591ab524145f9f0597a0db794ea\transformed\jetified-firebase-database-20.3.0\AndroidManifest.xml:23:5-67
 MERGED from [com.google.firebase:firebase-firestore:24.10.2] C:\Users\sebas\.gradle\caches\transforms-3\ca42e3c19ab2b91f9cb5ad64da224c7d\transformed\jetified-firebase-firestore-24.10.2\AndroidManifest.xml:11:5-67
@@ -419,41 +419,41 @@ MERGED from [com.google.android.gms:play-services-maps:18.2.0] C:\Users\sebas\.g
 MERGED from [com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\sebas\.gradle\caches\transforms-3\428aba4503beb37af6d44c42d85c9c0f\transformed\jetified-recaptcha-18.4.0\AndroidManifest.xml:7:5-67
 MERGED from [com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\sebas\.gradle\caches\transforms-3\428aba4503beb37af6d44c42d85c9c0f\transformed\jetified-recaptcha-18.4.0\AndroidManifest.xml:7:5-67
 	android:name
-		ADDED from [:firebase_dynamic_links] C:\Users\sebas\Downloads\Topografia\flutter\build\firebase_dynamic_links\intermediates\merged_manifest\release\AndroidManifest.xml:9:22-64
+		ADDED from [:firebase_dynamic_links] C:\Users\sebas\Desktop\TopografiaApps2023\build\firebase_dynamic_links\intermediates\merged_manifest\release\AndroidManifest.xml:9:22-64
 meta-data#com.google.firebase.components:io.flutter.plugins.firebase.dynamiclinks.FlutterFirebaseAppRegistrar
-ADDED from [:firebase_dynamic_links] C:\Users\sebas\Downloads\Topografia\flutter\build\firebase_dynamic_links\intermediates\merged_manifest\release\AndroidManifest.xml:13:13-15:85
+ADDED from [:firebase_dynamic_links] C:\Users\sebas\Desktop\TopografiaApps2023\build\firebase_dynamic_links\intermediates\merged_manifest\release\AndroidManifest.xml:13:13-15:85
 	android:value
-		ADDED from [:firebase_dynamic_links] C:\Users\sebas\Downloads\Topografia\flutter\build\firebase_dynamic_links\intermediates\merged_manifest\release\AndroidManifest.xml:15:17-82
+		ADDED from [:firebase_dynamic_links] C:\Users\sebas\Desktop\TopografiaApps2023\build\firebase_dynamic_links\intermediates\merged_manifest\release\AndroidManifest.xml:15:17-82
 	android:name
-		ADDED from [:firebase_dynamic_links] C:\Users\sebas\Downloads\Topografia\flutter\build\firebase_dynamic_links\intermediates\merged_manifest\release\AndroidManifest.xml:14:17-131
+		ADDED from [:firebase_dynamic_links] C:\Users\sebas\Desktop\TopografiaApps2023\build\firebase_dynamic_links\intermediates\merged_manifest\release\AndroidManifest.xml:14:17-131
 meta-data#com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar
-ADDED from [:firebase_auth] C:\Users\sebas\Downloads\Topografia\flutter\build\firebase_auth\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-13:85
+ADDED from [:firebase_auth] C:\Users\sebas\Desktop\TopografiaApps2023\build\firebase_auth\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-13:85
 	android:value
-		ADDED from [:firebase_auth] C:\Users\sebas\Downloads\Topografia\flutter\build\firebase_auth\intermediates\merged_manifest\release\AndroidManifest.xml:13:17-82
+		ADDED from [:firebase_auth] C:\Users\sebas\Desktop\TopografiaApps2023\build\firebase_auth\intermediates\merged_manifest\release\AndroidManifest.xml:13:17-82
 	android:name
-		ADDED from [:firebase_auth] C:\Users\sebas\Downloads\Topografia\flutter\build\firebase_auth\intermediates\merged_manifest\release\AndroidManifest.xml:12:17-124
+		ADDED from [:firebase_auth] C:\Users\sebas\Desktop\TopografiaApps2023\build\firebase_auth\intermediates\merged_manifest\release\AndroidManifest.xml:12:17-124
 meta-data#com.google.firebase.components:io.flutter.plugins.firebase.storage.FlutterFirebaseAppRegistrar
-ADDED from [:firebase_storage] C:\Users\sebas\Downloads\Topografia\flutter\build\firebase_storage\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-13:85
+ADDED from [:firebase_storage] C:\Users\sebas\Desktop\TopografiaApps2023\build\firebase_storage\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-13:85
 	android:value
-		ADDED from [:firebase_storage] C:\Users\sebas\Downloads\Topografia\flutter\build\firebase_storage\intermediates\merged_manifest\release\AndroidManifest.xml:13:17-82
+		ADDED from [:firebase_storage] C:\Users\sebas\Desktop\TopografiaApps2023\build\firebase_storage\intermediates\merged_manifest\release\AndroidManifest.xml:13:17-82
 	android:name
-		ADDED from [:firebase_storage] C:\Users\sebas\Downloads\Topografia\flutter\build\firebase_storage\intermediates\merged_manifest\release\AndroidManifest.xml:12:17-126
+		ADDED from [:firebase_storage] C:\Users\sebas\Desktop\TopografiaApps2023\build\firebase_storage\intermediates\merged_manifest\release\AndroidManifest.xml:12:17-126
 meta-data#com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar
-ADDED from [:firebase_core] C:\Users\sebas\Downloads\Topografia\flutter\build\firebase_core\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-13:85
+ADDED from [:firebase_core] C:\Users\sebas\Desktop\TopografiaApps2023\build\firebase_core\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-13:85
 	android:value
-		ADDED from [:firebase_core] C:\Users\sebas\Downloads\Topografia\flutter\build\firebase_core\intermediates\merged_manifest\release\AndroidManifest.xml:13:17-82
+		ADDED from [:firebase_core] C:\Users\sebas\Desktop\TopografiaApps2023\build\firebase_core\intermediates\merged_manifest\release\AndroidManifest.xml:13:17-82
 	android:name
-		ADDED from [:firebase_core] C:\Users\sebas\Downloads\Topografia\flutter\build\firebase_core\intermediates\merged_manifest\release\AndroidManifest.xml:12:17-124
+		ADDED from [:firebase_core] C:\Users\sebas\Desktop\TopografiaApps2023\build\firebase_core\intermediates\merged_manifest\release\AndroidManifest.xml:12:17-124
 service#com.baseflow.geolocator.GeolocatorLocationService
-ADDED from [:geolocator_android] C:\Users\sebas\Downloads\Topografia\flutter\build\geolocator_android\intermediates\merged_manifest\release\AndroidManifest.xml:10:9-14:56
+ADDED from [:geolocator_android] C:\Users\sebas\Desktop\TopografiaApps2023\build\geolocator_android\intermediates\merged_manifest\release\AndroidManifest.xml:10:9-14:56
 	android:enabled
-		ADDED from [:geolocator_android] C:\Users\sebas\Downloads\Topografia\flutter\build\geolocator_android\intermediates\merged_manifest\release\AndroidManifest.xml:12:13-35
+		ADDED from [:geolocator_android] C:\Users\sebas\Desktop\TopografiaApps2023\build\geolocator_android\intermediates\merged_manifest\release\AndroidManifest.xml:12:13-35
 	android:exported
-		ADDED from [:geolocator_android] C:\Users\sebas\Downloads\Topografia\flutter\build\geolocator_android\intermediates\merged_manifest\release\AndroidManifest.xml:13:13-37
+		ADDED from [:geolocator_android] C:\Users\sebas\Desktop\TopografiaApps2023\build\geolocator_android\intermediates\merged_manifest\release\AndroidManifest.xml:13:13-37
 	android:foregroundServiceType
-		ADDED from [:geolocator_android] C:\Users\sebas\Downloads\Topografia\flutter\build\geolocator_android\intermediates\merged_manifest\release\AndroidManifest.xml:14:13-53
+		ADDED from [:geolocator_android] C:\Users\sebas\Desktop\TopografiaApps2023\build\geolocator_android\intermediates\merged_manifest\release\AndroidManifest.xml:14:13-53
 	android:name
-		ADDED from [:geolocator_android] C:\Users\sebas\Downloads\Topografia\flutter\build\geolocator_android\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-77
+		ADDED from [:geolocator_android] C:\Users\sebas\Desktop\TopografiaApps2023\build\geolocator_android\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-77
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [com.google.firebase:firebase-database:20.3.0] C:\Users\sebas\.gradle\caches\transforms-3\7a645591ab524145f9f0597a0db794ea\transformed\jetified-firebase-database-20.3.0\AndroidManifest.xml:22:5-79
 MERGED from [com.google.firebase:firebase-firestore:24.10.2] C:\Users\sebas\.gradle\caches\transforms-3\ca42e3c19ab2b91f9cb5ad64da224c7d\transformed\jetified-firebase-firestore-24.10.2\AndroidManifest.xml:10:5-79
