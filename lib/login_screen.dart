@@ -98,6 +98,26 @@ class LoginScreen extends StatelessWidget {
       DatabaseReference logedUsersReference =
           FirebaseDatabase.instance.ref().child("logedusers");
 
+    //**************************
+      QuerySnapshot query1 = await FirebaseFirestore.instance
+      .collection("usuarios")
+      .where("email", isEqualTo: email)
+      .get();
+
+      if(query1.docs.isNotEmpty){
+        final String docId = query1.docs[0].id;
+        var usuario = await FirebaseFirestore.instance
+          .collection('usuarios')
+          .doc(docId)
+          .get();
+        
+      } 
+      final rol = usuario.get('rol');
+      if(rol == "Administrador"){
+        print("El administrador no envía posición");
+        return ;
+      }
+    //**************************
       final query =
           logedUsersReference.orderByChild('logedUserMail').equalTo(email);
       final snapshot = await query.once();
