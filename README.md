@@ -1,5 +1,3 @@
-¡Hola! ¡Claro que sí! Aquí te dejo un ejemplo de cómo podría ser el README para tu proyecto:
-
 ---
 
 # Proyecto de Topología con Flutter y Firebase
