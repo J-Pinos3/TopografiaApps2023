@@ -9,6 +9,7 @@ Link del despliegue con vercel
 https://web-application-khaki.vercel.app/
 
 Link del video manual de usuario
+
 https://youtu.be/w6hE0hgTCSs
 
 ## Integrantes del Equipo
