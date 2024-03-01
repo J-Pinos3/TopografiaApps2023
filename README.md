@@ -12,9 +12,6 @@ Link del video manual de usuario
 
 https://youtu.be/w6hE0hgTCSs
 
-Link de la aplicacion en apptoide
-
-
 
 ## Integrantes del Equipo
 
